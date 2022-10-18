@@ -3,13 +3,8 @@
   <div class="container">
     {% if site.locale and site.locale != "" and site.locale != nil %}
     <div class="row align-items-center">
-      <div class="col-md-4">
-        <span class="copyright"
-          >Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span
-        >
-      </div>
       <!-- Social Media -->
-      <div class="col-md-4">
+      <div class="col-md-3">
         <ul class="list-inline social-buttons">
           {% for link in site.data.sitetext[site.locale].footer.social %}
           <li class="list-inline-item">
@@ -22,8 +17,14 @@
           {% endfor %}
         </ul>
       </div>
+      <!-- Copyright -->
+      <div class="col-md-3">
+        <span class="copyright"
+          >Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span
+        >
+      </div>
       <!-- Legal -->
-      <div class="col-md-4">
+      <div class="col-md-3">
         <ul class="list-inline quicklinks">
           <li class="list-inline-item">
             <a href="legal"
@@ -33,16 +34,22 @@
           </li>
         </ul>
       </div>
+      <!-- Acknowledgement -->
+      <div class="col-md-3">
+        <ul class="list-inline quicklinks">
+          <li class="list-inline-item">
+            <a href="acknowledgement"
+              >{{ site.data.sitetext[site.locale].footer.acknowledgement | default:
+              "Acknowledgement" }}</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
     {% else %}
     <div class="row align-items-center">
-      <div class="col-md-4">
-        <span class="copyright"
-          >Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span
-        >
-      </div>
       <!-- Social Media -->
-      <div class="col-md-4">
+      <div class="col-md-3">
         <ul class="list-inline social-buttons">
           {% for link in site.data.sitetext.footer.social %}
           <li class="list-inline-item">
@@ -55,13 +62,30 @@
           {% endfor %}
         </ul>
       </div>
+      <!-- Copyright -->
+      <div class="col-md-3">
+        <span class="copyright"
+          >Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span
+        >
+      </div>
       <!-- Legal -->
-      <div class="col-md-4">
+      <div class="col-md-3">
         <ul class="list-inline quicklinks">
           <li class="list-inline-item">
             <a href="legal"
               >{{ site.data.sitetext.footer.legal | default:
               "Privacy Policy" }}</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Acknowledgement -->
+      <div class="col-md-3">
+        <ul class="list-inline quicklinks">
+          <li class="list-inline-item">
+            <a href="acknowledgement"
+              >{{ site.data.sitetext[site.locale].footer.acknowledgement | default:
+              "Acknowledgement" }}</a
             >
           </li>
         </ul>
