@@ -16,7 +16,7 @@ theme: jekyll-agency
 url    : "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
-title      : Taiamiti Edmunds Personal Website
+title      : Personal Website
 email      : taiamiti.edmunds@ml4everyone.com #this is also the email contact forms will go to
 description: "My personal website with my portfolio to showcase my skills as a new Freelancer"
 author     : Taiamiti Edmunds
