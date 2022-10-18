@@ -130,19 +130,19 @@ en: &DEFAULT_EN
             icon: fab fa-linkedin-in
 
   contact:
-    title: "Contact Us"
-    text: "Lorem ipsum or call 123456789"
+    title: "Contact Me"
+    text: "Lorem ipsum"
     section: contact
-    name: "Name*"
-    name-validation: "Please enter your name."
-    email: "Email*"
-    email-validation: "Please enter your email address."
-    phone: "Phone Number"
-    phone-validation: "Please enter your phone number."
-    message: "Message*"
-    message-validation: "Please enter a message."
-    subject: "Contact Form Submission"
-    submit: "Send Message"
+    list:
+      - title: "E-mail"
+        desc: "taiamiti.edmunds@ml4everyone.com"
+        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+      - title: "Phone"
+        desc: "(+689) 89 58 08 89"
+        icon: fas fa-laptop
+      - title: "Address"
+        desc: "Papeete - Tahiti - French Polynesia"
+        icon: fab fa-markdown
 
   footer:
     legal: "Privacy Policy"
