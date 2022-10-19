@@ -18,18 +18,26 @@ en: &DEFAULT_EN
 
   services:
     title: "Services"
-    text: "Lorem ipsum"
+    text: "Example of missions done in the past"
     section: services
     list:
-      - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Your description here, full **Markdown** support"
-        icon: fab fa-markdown
+      - title: "Consulting"
+        desc: "Do you need insights on what AI can accomplish for your business? See how AI can add value to existing data. Get budget estimations
+         along with a Roadmap to integrate those solutions."
+        icon: fas fa-lightbulb #find more at https://fontawesome.com/icons
+      - title: "Prototyping"
+        desc: "Get a first solution with extensive performance evaluations. The goal is to highlight limitations and improvements required to obtain a solution
+        suitable for production."
+        icon: fas fa-pen
+      - title: "Deployment"
+        desc: "Deploy models through APIs once performance are satisfactory. Deployments can be on cloud or on device (laptops, smartphones)."
+        icon: fas fa-industry
+      - title: "Skills transfer"
+        desc: "Internalize the competence to maintain and improve AI solutions through code review and training sessions."
+        icon: fas fa-cogs
+      - title: "Teaching"
+        desc: "Coming soon..."
+        icon: fas fa-user-graduate
 
   portfolio:
     title: "Portfolio"
@@ -70,7 +78,7 @@ en: &DEFAULT_EN
 
   about:
     title: "About Me"
-    text: "My story"
+    text: "Hi, I am Taiamiti!"
     body: "
     Native from Tahiti, a small island in the pacific, I decided to come back and work in full remote as a machine learning expert after 
     spending almost 16 years in France between studies and salary work.
@@ -162,7 +170,7 @@ en: &DEFAULT_EN
         icon: fas fa-phone
       - title: "Address"
         desc: "Papeete - Tahiti - French Polynesia"
-        icon: fas fa-address-card
+        icon: fas fa-map-marker-alt
 
   footer:
     legal: "Privacy Policy"
