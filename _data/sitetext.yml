@@ -39,34 +39,34 @@ en: &DEFAULT_EN
 
   timeline:
     title: "Timeline"
-    text: "Lorem ipsum timeline"
+    text: ""
     section: timeline
     # left is the default
     #start_align: "left"
     events:
-      - title: "Our Humble Beginnings"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/1.jpg
+      - title: "From Tahiti to France"
+        year: "July 2007"
+        desc: "Graduating from Paul Gauguin highschool in Tahiti, I started my scientific jouney in Toulouse in one of the best 'Classes Préparatoires aux Grandes Ecoles' (Lycé Pierre de Fermat)."
+        image: assets/img/timeline/tahiti.png
         alt:
-      - title: "An Agency is Born"
-        year: "March 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/2.jpg
+      - title: "Master's degree in Engineering Grenoble-INP"
+        year: "From 2010 to 2013"
+        desc: "Graduating from [PHELMA](https://phelma.grenoble-inp.fr/en). I learned signal and image processing alongside software engineering and scientific computing."
+        image: assets/img/timeline/PHELMA.png
         alt:
-      - title: "Jekyll Theme is created"
-        year: "2019"
-        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
-        image: assets/img/timeline/3.jpg
+      - title: "PhD in Université Grenoble Alpes"
+        year: "From 2013 to 2017"
+        desc: "Thesis on the protection of 2D face identification systems against spoofing attacks at [GIPSA-LAB](http://www.gipsa-lab.fr/). I became a machine learning and computer vision specialist during that time."
+        image: assets/img/timeline/gipsa.png
         alt: image alt text
-      - title: "Title"
-        year: "2009-2011"
-        desc: "Your description here, **Markdown** is fully supported."
-        image: assets/img/timeline/4.jpg
+      - title: "Debut at Neovision"
+        year: "From 2017 to 2022"
+        desc: "Working as an ML engineer and AI consultant in [Neovision](https://neovision.fr/en/home/). This 5 years of startup experience allowed me to grow my skills in software engineering and master key components of the large ML stack."
+        image: assets/img/timeline/ai.png
         alt:
         # you can enforce the alignment
         align: right
-    end: "Be Part <br> of Our <br> Story!"
+    end: "2022<br>Back to Tahiti <br> as Freelance!"
 
   about:
     title: "About Us"
