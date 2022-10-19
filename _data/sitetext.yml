@@ -79,18 +79,30 @@ en: &DEFAULT_EN
     max-height: 100px
     horizontal-scrolling: "" #"yes/no"
     list:
-      - title: "envato"
+      - title: "CTC"
         url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
-      - title: "designmodo"
+        logo: assets/img/clients_/logo_ctc.png
+      - title: "Michelin"
         url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
+        logo: assets/img/clients_/michelin.png
+      - title: "MyFitSolutions"
         url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
+        logo: assets/img/clients_/myfitsolutions.png
+      - title: "Scneider Electric"
         url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
+        logo: assets/img/clients_/schneider_elec.png
+      - title: "Groupe SEB"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients_/seb-brand-logo-prod.png
+      - title: "Safran"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients_/safran.png  
+      - title: "Transarc"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients_/transarc.png
+      - title: "Enlaps"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients_/enlaps.png
 
   team:
     title: "OUR AMAZING TEAM"
