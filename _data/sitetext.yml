@@ -69,9 +69,17 @@ en: &DEFAULT_EN
     end: "2022<br>Back to Tahiti <br> as Freelance!"
 
   about:
-    title: "About Us"
-    text: "our story"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    title: "About Me"
+    text: "My story"
+    body: "
+    Native from Tahiti, a small island in the pacific, I decided to come back and work in full remote as a machine learning expert after 
+    spending almost 16 years in France between studies and salary work.
+    My PhD years made me realize that research in AI is inspiring and mature enough to be used in real life applications. Since then, I have been counseling several 
+    companies in adopting AI technologies during my years at Neovision. I want to leverage my experience as Tech Lead to design, prototype and 
+    deploy custom AI solutions with a positive social and environmenental impact. Hopefully I can bring this expertise to local companies in Tahiti and its neighbors.
+    In the end, I am starting a new career as a Freelancer to achieve these new goals.
+    "
+    photo: assets/img/timeline/tahiti.png
     section: about
 
   clients:
