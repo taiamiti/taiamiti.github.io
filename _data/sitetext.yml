@@ -156,13 +156,13 @@ en: &DEFAULT_EN
     list:
       - title: "E-mail"
         desc: "taiamiti.edmunds@ml4everyone.com"
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+        icon: fas fa-envelope #find more at https://fontawesome.com/icons
       - title: "Phone"
         desc: "(+689) 89 58 08 89"
-        icon: fas fa-laptop
+        icon: fas fa-phone
       - title: "Address"
         desc: "Papeete - Tahiti - French Polynesia"
-        icon: fab fa-markdown
+        icon: fas fa-address-card
 
   footer:
     legal: "Privacy Policy"
