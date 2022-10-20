@@ -9,8 +9,5 @@ background: grey
 </div>
 
 
-Special thanks to xx for this greate template
-
-Useful ressources :
-- list them
-- all
+Special thanks to [Ravi](https://www.raviriley.com/) for  for this great template. The theme source code
+was forked from [this](https://github.com/raviriley/agency-jekyll-theme/) Github project.
