@@ -1,22 +1,26 @@
 ---
 caption: #what displays in the portfolio grid:
-  title: Example
-  subtitle: subtitle
-  thumbnail: https://place-hold.it/400x300
+  title: OCR on raw leather markings
+  subtitle: CTC
+  thumbnail: assets/img/portfolio/ocr_ctc.png
   
 #what displays when the item is clicked:
-title: Title
-subtitle: subtitle lorem ipsum dolor sit amet consectetur.
-image: https://place-hold.it/400x300 #main image, can be a link or a file in assets/img/portfolio
+title: OCR on raw leather markings
+subtitle: 
+image: assets/img/portfolio/ocr_ctc.png #main image, can be a link or a file in assets/img/portfolio
 alt: image alt text
 
 ---
-Use this area to describe your project. **Markdown** supported.
+Traditional and off-the-shelf OCR solutions could not read leather markings correctly due to various text orientations and special image texture. 
+Hence, a custom OCR solution was developed and patented. As the Lead Tech in this project, I was designated as one of the inventors.
 
-optional info list (delete if not using):
+Add doc
+
+For more information refer to Neovision [project page](https://neovision.fr/en/portfolio-item/automatic-laser-engraving-reader-ocr/)
+or directly to CTC's [project page](https://www.ctcgroupe.com/en/blog/81/2020-03-25/leather-traceability-ctcs-unique-design-for-a-solution.html)
 
 {:.list-inline} 
-- Date: 
-- Client: 
-- Category: 
+- Date: 16 October 2020
+- Client: Cente Technique du Cuir (CTC)
+- Category: Computer Vision, Deep Learning, R&D, OCR
 
