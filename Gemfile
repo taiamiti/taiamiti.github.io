@@ -1,6 +1,9 @@
 #after any changes to the Gemfile, execute bundle update!
 source "https://rubygems.org"
-gemspec
+
+gem "jekyll-remote-theme"
+gem "github-pages", group: :jekyll_plugins
+# gemspec
 
 # Comment the following lines if not on Windows: 
 # Performance-booster for watching directories on Windows
