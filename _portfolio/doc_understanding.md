@@ -16,6 +16,11 @@ OCR on documents
 Key information retrieval
 
 
+Electrical schema layout extraction
+
+
+
+
 
 
 
