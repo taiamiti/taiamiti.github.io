@@ -6,7 +6,7 @@ This website is built from the agency jekyll theme from [this](https://github.co
 - remove the team section
 - add an aknowledgement page  
 
-For more information on the original template, visit the original theme projects page.
+For more information on the original template, visit the original theme project [page](https://github.com/raviriley/agency-jekyll-theme).
 
 [![RubyGems Downloads](https://img.shields.io/gem/dt/jekyll-agency?label=gem%20downloads)](https://rubygems.org/gems/jekyll-agency)
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue)](/LICENSE.txt)
@@ -14,7 +14,7 @@ For more information on the original template, visit the original theme projects
 ## Installation as a remote theme for github pages
 
 
-Update your `_config.yml` file and your `Gemfile` to 
+Update your `_config.yml` file and your `Gemfile`.
 
 
 ### 1. Build locally to test your site
