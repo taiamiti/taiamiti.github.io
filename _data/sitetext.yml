@@ -41,7 +41,7 @@ en: &DEFAULT_EN
 
   portfolio:
     title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
+    text: "Realisations and center of interests."
     section: portfolio
     closebutton: "Close Project"
 
@@ -78,19 +78,20 @@ en: &DEFAULT_EN
 
   about:
     title: "About Me"
-    text: "Hi, I am Taiamiti!"
+    text: 
     body: "
-    Native from Tahiti, a small island in the pacific, I decided to come back and work in full remote as a machine learning expert after 
-    spending almost 16 years in France between studies and salary work.
-    My PhD years made me realize that research in AI is inspiring and mature enough to be used in real life applications. Since then, I have been counseling several 
-    companies in adopting AI technologies during my years at Neovision. I want to leverage my experience as Tech Lead to design, prototype and 
+    Native from Tahiti, I decided to come back after spending almost 16 years in France between studies and salary work.
+    Research in AI is thrilling and major breakthrough in Deep learning made real life AI solutions viable. During my years at Neovision, 
+    I have been counseling several companies in adopting AI technologies. I want to leverage my experience as Tech Lead to design, prototype and 
     deploy custom AI solutions with a positive social and environmenental impact. Hopefully I can bring this expertise to local companies in Tahiti and its neighbors.
-    In the end, I am starting a new career as a Freelancer to achieve these new goals.
+    So, I am starting a new career as a Freelancer to work in full remote from Tahiti as a machine learning expert.
     "
     photo: assets/img/timeline/tahiti.png
     section: about
 
   clients:
+    title: Clients
+    text: Successful collaborations
     section: clients
     max-height: 100px
     horizontal-scrolling: "" #"yes/no"
@@ -159,7 +160,7 @@ en: &DEFAULT_EN
 
   contact:
     title: "Contact Me"
-    text: "Lorem ipsum"
+    text: ""
     section: contact
     list:
       - title: "E-mail"
