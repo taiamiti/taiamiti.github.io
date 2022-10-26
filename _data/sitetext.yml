@@ -203,25 +203,27 @@ fr: &DEFAULT_FR
 
   services:
     title: "Services"
-    text: "Example of missions done in the past"
+    text: "Exemples de missions"
     section: services
     list:
       - title: "Consulting"
-        desc: "Do you need insights on what AI can accomplish for your business? See how AI can add value to existing data. Get budget estimations
-         along with a Roadmap to integrate those solutions."
+        desc: "Savez vous ce que l'IA peut vous apporter? Découvreez comment l'IA peut valoriser vos données métier. Obtenez 
+        des estimations de budget et une roadmap pour implémenter des solutions IA adaptées à vos besoins."
         icon: fas fa-lightbulb #find more at https://fontawesome.com/icons
-      - title: "Prototyping"
-        desc: "Get a first solution with extensive performance evaluations. The goal is to highlight limitations and improvements required to obtain a solution
-        suitable for production."
+      - title: "Prototypage"
+        desc: "Obtenez une première solution permettant d'évaluer les performances des modèles sur votre cas d'usage. L'objectif est de mettre en avant les
+        limitations et améliorations requises pour obtenir une solution industrialisable."
         icon: fas fa-pen
-      - title: "Deployment"
-        desc: "Deploy models through APIs once performance are satisfactory. Deployments can be on cloud or on device (laptops, smartphones)."
+      - title: "Déploiement"
+        desc: "Déploiement des modèles sous forme d'API après valiation des perfomances. Cette étape peut être réalisée sur le 
+        cloud ou en local (laptops, smartphones)"
         icon: fas fa-industry
-      - title: "Skills transfer"
-        desc: "Internalize the competence to maintain and improve AI solutions through code review and training sessions."
+      - title: "Transfer de compétences"
+        desc: "Internalisation de la compétence IA afin de maintenir et d'améliorer
+        la solution développée au travers de revue de code et de sessions de formation."
         icon: fas fa-cogs
-      - title: "Teaching"
-        desc: "Coming soon..."
+      - title: "Enseignement"
+        desc: "A venir..."
         icon: fas fa-user-graduate
 
   portfolio:
@@ -237,24 +239,29 @@ fr: &DEFAULT_FR
     # left is the default
     #start_align: "left"
     events:
-      - title: "From Tahiti to France"
-        year: "July 2007"
-        desc: "Graduating from Paul Gauguin highschool in Tahiti, I started my scientific jouney in Toulouse in one of the best 'Classes Préparatoires aux Grandes Ecoles' (Lycé Pierre de Fermat)."
+      - title: "De Tahiti vers la France"
+        year: "Juillet 2007"
+        desc: "Diplomé du lycée Paul Gauguin (Tahiti), j'ai lancé ma carrière scientifique à Toulouse dans l'une des meilleures 
+        'Classes Préparatoires aux Grandes Ecoles' (Lycée Pierre de Fermat)."
         image: assets/img/timeline/tahiti.png
         alt:
-      - title: "Master's degree in Engineering Grenoble-INP"
-        year: "From 2010 to 2013"
-        desc: "Graduating from [PHELMA](https://phelma.grenoble-inp.fr/en). I learned signal and image processing alongside software engineering and scientific computing."
+      - title: "Diplome d'ingénieur Grenoble-INP"
+        year: "De 2010 à 2013"
+        desc: "J'ai appris le traitement du signal et le l'image ainsi que le developpement informatique et le calcul 
+        scientifique à [PHELMA](https://phelma.grenoble-inp.fr/en)."
         image: assets/img/timeline/PHELMA.png
         alt:
-      - title: "PhD in Université Grenoble Alpes"
-        year: "From 2013 to 2017"
-        desc: "Thesis on the protection of 2D face identification systems against spoofing attacks at [GIPSA-LAB](http://www.gipsa-lab.fr/). I became a machine learning and computer vision specialist during that time."
+      - title: "Doctorat à l'UGA (Université Grenoble Alpes)"
+        year: "De 2013 à 2017"
+        desc: "Thèse sur la protection des systèmes de reconnaissance de visage contre les attaques par présentation de leurres au
+         [GIPSA-LAB](http://www.gipsa-lab.fr/). Je suis alors de venu un spécialiste du machine learning et de la vision par ordinteur."
         image: assets/img/timeline/gipsa.png
         alt: image alt text
-      - title: "Debut at Neovision"
-        year: "From 2017 to 2022"
-        desc: "Working as an ML engineer and AI consultant in [Neovision](https://neovision.fr/en/home/). This 5 years of startup experience allowed me to grow my skills in software engineering and master key components of the large ML stack."
+      - title: "Début à Neovision"
+        year: "De 2017 à 2022"
+        desc: "Premiers pas en tant qu'ingénieur ML chez [Neovision](https://neovision.fr/en/home/). 
+        Ces 5 années en environement startup m'a permis d'accroitre mes compétences en développement informatique et aussi de maîtriser les outils 
+        clefs de la stack ML."
         image: assets/img/timeline/ai.png
         alt:
         # you can enforce the alignment
@@ -265,17 +272,17 @@ fr: &DEFAULT_FR
     title: "Portrait"
     text: 
     body: "
-    Originaire de Tahiti, I decided to come back after spending 16 years in France where I studied and worked in AI. During my years at Neovision, 
-    I have been counseling several companies in adopting AI technologies. I want to leverage my experience as Tech Lead to design, prototype and 
-    deploy custom AI solutions with a positive social and environmenental impact. Hopefully I can bring this expertise to local companies in Tahiti and its neighbors.
-    So, I am starting a new career as a Freelancer to work in full remote from Tahiti as a machine learning expert.
+    Originaire de Tahiti, j'ai décider de rentrer après 16 années passées en France pour les études et mes premiers pas dans l'industrie IA.
+    A Neovision, j'ai accompagné des entreprises dans l'adoption des technologies de ML. Je souhaite mettre à profit mon expérience en tant que Lead tech 
+    pour concevoir, implémenter et déployer des solutions d'IA personnalisées qui ont un impact positif d'un point de vue social et environemental.
+    Je me suis donc lancé dans l'auto-entreprenariat pour entreprendre des projets innovants sur le territoir polynésien et à l'international grâce au télétravail.
     "
     photo: assets/img/timeline/tahiti.png
     section: portrait
 
   clients:
     title: Clients
-    text: Successful collaborations
+    text: Collaborations
     section: clients
     max-height: 100px
     horizontal-scrolling: "" #"yes/no"
@@ -313,10 +320,10 @@ fr: &DEFAULT_FR
       - title: "E-mail"
         desc: "taiamiti.edmunds@ml4everyone.com"
         icon: fas fa-envelope #find more at https://fontawesome.com/icons
-      - title: "Phone"
+      - title: "Téléphone"
         desc: "(+689) 89 58 08 89"
         icon: fas fa-phone
-      - title: "Address"
+      - title: "Addresse"
         desc: "Papeete - Tahiti - French Polynesia"
         icon: fas fa-map-marker-alt
 
