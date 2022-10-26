@@ -57,11 +57,11 @@
 <header class="masthead">
   <div class="container">
     <div class="intro-text">
-      {%- if site.data.sitetext[include.lang].header.text -%}
-      <div class="intro-heading">{{ site.data.sitetext[include.lang].header.text | markdownify }}</div>
-      {%- endif -%}
       {%- if site.data.sitetext[include.lang].header.title -%}
-      <div class="intro-lead-in">{{ site.data.sitetext[include.lang].header.title | markdownify }}</div>
+      <div class="intro-heading">{{ site.data.sitetext[include.lang].header.title | markdownify }}</div>
+      {%- endif -%}
+      {%- if site.data.sitetext[include.lang].header.text -%}
+      <div class="intro-lead-in">{{ site.data.sitetext[include.lang].header.text | markdownify }}</div>
       {%- endif -%}
       {%- if site.data.sitetext[include.lang].header.button -%}
       <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
