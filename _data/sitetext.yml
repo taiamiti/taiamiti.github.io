@@ -192,308 +192,141 @@ en-GB:
 en-AU:
   <<: *DEFAULT_EN
 
-# Spanish
+# French
 # -------
-es: &DEFAULT_ES
+fr: &DEFAULT_FR
   header:
-    title: ¡Bienvenido a nuestro Estudio!
-    text: Es un placer conocerle
-    button: Ver más
-    buttonlink: "#servicios"
+    title: Rendre l'IA accessible
+    text: Taiamiti  Edmunds
+    button: Plus d'infos
+    buttonlink: "#services"
 
   services:
-    title: "Servicios"
-    text: "Lorem ipsum"
-    section: servicios
+    title: "Services"
+    text: "Example of missions done in the past"
+    section: services
     list:
-      - title: "Comercio Electrónico"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Diseño Responsivo"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Su descripción aquí, soporte completo de **Markdown**"
-        icon: fab fa-markdown
-
-  portfolio:
-    title: "Portafolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    section: portafolio
-    closebutton: "Cerrar Proyecto"
-
-  timeline:
-    title: "Cronología"
-    text: "Lorem ipsum timeline"
-    section: cronologia
-    # left is the default
-    #start_align: "left"
-    events:
-      - title: "Nuestro Humilde Comienzo"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/1.jpg
-        alt:
-      - title: "Una Agencia nace"
-        year: "March 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/2.jpg
-        alt:
-      - title: "La plantilla Jekyll es creada"
-        year: "2019"
-        desc: "Ravi Riley convirtió Agency, una plantilla basada en Bootstrap, en una plantilla de Jekyll. La plantilla Jekyll puede ser instalada commo una gema de Ruby (Ruby gem) o remotamente. Para más información, visite la documentación."
-        image: assets/img/timeline/3.jpg
-        alt: image alt text
-      - title: "Título"
-        year: "2009-2011"
-        desc: "Su descripción aquí, **Markdown** es soportado completamente."
-        image: assets/img/timeline/4.jpg
-        alt:
-        # you can enforce the alignment
-        align: right
-    end: "¡Se parte <br> de Nuestra <br> Historia!"
-
-  about:
-    title: "Sobre nosotros"
-    text: "nuestra historia"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
-    section: nosotros
-
-  clients:
-    section: clientes
-    max-height: 100px
-    horizontal-scrolling: "" #"yes/no"
-    list:
-      - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
-
-  team:
-    title: "NUESTRO INCREÍBLE EQUIPO"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
-    section: equipo
-    people:
-      - name: "Kay Garland"
-        role: "Lead Designer"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Larry Parker"
-        role: "Lead Marketer"
-        image: assets/img/team/2.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Diana Perterson"
-        role: "Lead Developer"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-
-  contact:
-    title: "Contáctenos"
-    text: "Lorem ipsum or call 123456789"
-    section: contacto
-    name: "Nombre*"
-    name-validation: "Por favor ingrese su nombre."
-    email: "Correo Electrónico*"
-    email-validation: "Por favor ingrese su correo electrónico."
-    phone: "Número Telefónico*"
-    phone-validation: "Por favor ingrese su número telefónico."
-    message: "Mensaje*"
-    message-validation: "Por favor escriba un mensaje."
-    subject: "Envío del formulario de contacto"
-    submit: "Enviar Mensaje"
-
-  footer:
-    legal: "Política de Privacidad"
-    social:
-      - url: https://twitter.com
-        icon: "fab fa-twitter"
-      - url: https://facebook.com
-        icon: "fab fa-facebook-f"
-      - url: https://linkedin.com
-        icon: "fab fa-linkedin-in"
-      - url: https://github.com/raviriley/agency-jekyll-theme
-        icon: "fab fa-github"
-      - url: https://instagram.com
-        icon: "fab fa-instagram"
-es-ES:
-  <<: *DEFAULT_ES
-es-CO:
-  <<: *DEFAULT_ES
-
-# Deutsch
-# -----------------
-de: &DEFAULT_DE
-  header:
-    title: Willkommen auf unserer Webseite!
-    text: Schön das Sie hier sind!
-    button: Mehr erfahren
-    buttonlink: "#Angebote"
-
-  services:
-    title: "Leistungen"
-    text: "Was wir anbieten."
-    section: Leistungen
-    list:
-      - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://de.wikipedia.org/wiki/Markdown)"
-        desc: "Hier können Sie etwas mit **Markdown** einfügen."
-        icon: fab fa-markdown
+      - title: "Consulting"
+        desc: "Do you need insights on what AI can accomplish for your business? See how AI can add value to existing data. Get budget estimations
+         along with a Roadmap to integrate those solutions."
+        icon: fas fa-lightbulb #find more at https://fontawesome.com/icons
+      - title: "Prototyping"
+        desc: "Get a first solution with extensive performance evaluations. The goal is to highlight limitations and improvements required to obtain a solution
+        suitable for production."
+        icon: fas fa-pen
+      - title: "Deployment"
+        desc: "Deploy models through APIs once performance are satisfactory. Deployments can be on cloud or on device (laptops, smartphones)."
+        icon: fas fa-industry
+      - title: "Skills transfer"
+        desc: "Internalize the competence to maintain and improve AI solutions through code review and training sessions."
+        icon: fas fa-cogs
+      - title: "Teaching"
+        desc: "Coming soon..."
+        icon: fas fa-user-graduate
 
   portfolio:
     title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    section: Portfolio
-    closebutton: "Schließen"
+    text: "Realisations and center of interests."
+    section: portfolio
+    closebutton: "Close Project"
 
   timeline:
-    title: "Geschichte"
-    text: "Lorem ipsum timeline"
-    section: Geschichte
+    title: "Parcours"
+    text: ""
+    section: parcours
     # left is the default
     #start_align: "left"
     events:
-      - title: "Unsere Anfänge"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/1.jpg
+      - title: "From Tahiti to France"
+        year: "July 2007"
+        desc: "Graduating from Paul Gauguin highschool in Tahiti, I started my scientific jouney in Toulouse in one of the best 'Classes Préparatoires aux Grandes Ecoles' (Lycé Pierre de Fermat)."
+        image: assets/img/timeline/tahiti.png
         alt:
-      - title: "Gründung der Firma"
-        year: "März 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/2.jpg
+      - title: "Master's degree in Engineering Grenoble-INP"
+        year: "From 2010 to 2013"
+        desc: "Graduating from [PHELMA](https://phelma.grenoble-inp.fr/en). I learned signal and image processing alongside software engineering and scientific computing."
+        image: assets/img/timeline/PHELMA.png
         alt:
-      - title: "Das Jekyll-Thema wurde erstellt"
-        year: "2019"
-        desc: "Ravi Riley wandelte Agency, ein auf Bootstrap basierendes Thema, in ein Jekyll-Thema um. Man kann das Jekyll-Thema als Ruby-Gem oder remotely installieren. Für mehr Informationen, schauen Sie sich die Dokumentation an."
-        image: assets/img/timeline/3.jpg
-        alt: Bildbeschreibung
-      - title: "Titel"
-        year: "2009-2011"
-        desc: "Hier können Sie etwas mit **Markdown** einfügen."
-        image: assets/img/timeline/4.jpg
+      - title: "PhD in Université Grenoble Alpes"
+        year: "From 2013 to 2017"
+        desc: "Thesis on the protection of 2D face identification systems against spoofing attacks at [GIPSA-LAB](http://www.gipsa-lab.fr/). I became a machine learning and computer vision specialist during that time."
+        image: assets/img/timeline/gipsa.png
+        alt: image alt text
+      - title: "Debut at Neovision"
+        year: "From 2017 to 2022"
+        desc: "Working as an ML engineer and AI consultant in [Neovision](https://neovision.fr/en/home/). This 5 years of startup experience allowed me to grow my skills in software engineering and master key components of the large ML stack."
+        image: assets/img/timeline/ai.png
         alt:
         # you can enforce the alignment
         align: right
-    end: "Seien Sie <br> Teil unserer <br> Geschichte!"
+    end: "2022<br>Back to Tahiti <br> as Freelance!"
 
   about:
-    title: "Über uns"
-    text: "Unsere Geschichte."
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
-    section: Ueber
+    title: "Portrait"
+    text: 
+    body: "
+    Originaire de Tahiti, I decided to come back after spending 16 years in France where I studied and worked in AI. During my years at Neovision, 
+    I have been counseling several companies in adopting AI technologies. I want to leverage my experience as Tech Lead to design, prototype and 
+    deploy custom AI solutions with a positive social and environmenental impact. Hopefully I can bring this expertise to local companies in Tahiti and its neighbors.
+    So, I am starting a new career as a Freelancer to work in full remote from Tahiti as a machine learning expert.
+    "
+    photo: assets/img/timeline/tahiti.png
+    section: portrait
 
   clients:
-    section: Kunden
+    title: Clients
+    text: Successful collaborations
+    section: clients
     max-height: 100px
     horizontal-scrolling: "" #"yes/no"
     list:
-      - title: "envato"
+      - title: "CTC"
         url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
-      - title: "designmodo"
+        logo: assets/img/clients_/logo_ctc.png
+      - title: "Michelin"
         url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
+        logo: assets/img/clients_/michelin.png
+      - title: "MyFitSolutions"
         url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
+        logo: assets/img/clients_/myfitsolutions.png
+      - title: "Scneider Electric"
         url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
-
-  team:
-    title: "Unser großartiges Team"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
-    section: Team
-    people:
-      - name: "Kay Garland"
-        role: "Chef-Designer"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Larry Parker"
-        role: "Chef der Werbeabteilung"
-        image: assets/img/team/2.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Diana Perterson"
-        role: "Chef-Programmiererin"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
+        logo: assets/img/clients_/schneider_elec.png
+      - title: "Groupe SEB"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients_/seb-brand-logo-prod.png
+      - title: "Safran"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients_/safran.png  
+      - title: "Transarc"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients_/transarc.png
+      - title: "Enlaps"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients_/enlaps.png
 
   contact:
-    title: "Kontakt"
-    text: "Kontaktieren Sie uns."
-    section: Kontakt
-    name: "Name*"
-    name-validation: "Geben Sie einen Namen ein."
-    email: "E-Mail*"
-    email-validation: "Geben Sie Ihre E-Mail-Addresse ein."
-    phone: "Telefonnummer*"
-    phone-validation: "Geben Sie Ihre Telefonnummer ein."
-    message: "Nachricht*"
-    message-validation: "Schreiben Sie etwas..."
-    subject: "Kontakt-Formular Bestätigung"
-    submit: "Nachricht absenden"
+    title: "Contact"
+    text: ""
+    section: contact
+    list:
+      - title: "E-mail"
+        desc: "taiamiti.edmunds@ml4everyone.com"
+        icon: fas fa-envelope #find more at https://fontawesome.com/icons
+      - title: "Phone"
+        desc: "(+689) 89 58 08 89"
+        icon: fas fa-phone
+      - title: "Address"
+        desc: "Papeete - Tahiti - French Polynesia"
+        icon: fas fa-map-marker-alt
 
   footer:
-    legal: "Datenschutzerklärung"
+    legal: "Confidentialité"
+    acknowledgement : "Remerciements"
     social:
-      - url: https://twitter.com
-        icon: "fab fa-twitter"
-      - url: https://facebook.com
+      - url: https://facebook.com/taiamiti.edmunds
         icon: "fab fa-facebook-f"
-      - url: https://linkedin.com
+      - url: https://linkedin.com/in/taiamiti-edmunds
         icon: "fab fa-linkedin-in"
-      - url: https://github.com/raviriley/agency-jekyll-theme
+      - url: https://github.com/taiamiti/taiamiti.github.io
         icon: "fab fa-github"
-      - url: https://instagram.com
-        icon: "fab fa-instagram"

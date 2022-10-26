@@ -1,25 +1,26 @@
 <!-- About -->
-{% if site.locale and site.locale != "" and site.locale != nil %}
-<section class="page-section" id="{{ site.data.sitetext[site.locale].about.section | default: "about" }}">
+{% if include.lang and include.lang != "" and include.lang != nil %}
+<section class="page-section" id="{{ site.data.sitetext[include.lang].about.section | default: " about" }}">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].about.title | default: "About Us" }}</h2>
-        <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].about.text | default: "" }}</h3>
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[include.lang].about.title | default: "About
+          Us" }}</h2>
+        <h3 class="section-subheading text-muted">{{ site.data.sitetext[include.lang].about.text | default: "" }}</h3>
       </div>
     </div>
     <div class="row align-items-center">
       <div class="col-sm-4 mx-auto text-center">
-        <img class="rounded-circle img-fluid" src={{ site.data.sitetext[site.locale].about.photo }}>
+        <img class="rounded-circle img-fluid" src={{ site.data.sitetext[include.lang].about.photo }}>
       </div>
       <div class="col-sm-8 mx-auto text-center">
-        <div class="large text-muted">{{ site.data.sitetext[site.locale].about.body | markdownify }}</div>
+        <div class="large text-muted">{{ site.data.sitetext[include.lang].about.body | markdownify }}</div>
       </div>
     </div>
   </div>
 </section>
 {% else %}
-<section class="page-section" id="{{ site.data.sitetext.about.section | default: "about" }}">
+<section class="page-section" id="{{ site.data.sitetext.about.section | default: " about" }}">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -29,7 +30,7 @@
     </div>
     <div class="row">
       <div class="col-lg-3 mx-auto text-center">
-        <img class="rounded-circle img-fluid" src={{ site.data.sitetext[site.locale].about.photo }}>
+        <img class="rounded-circle img-fluid" src={{ site.data.sitetext[include.lang].about.photo }}>
       </div>
       <div class="col-lg-8 mx-auto text-center">
         <div class="large text-muted">{{ site.data.sitetext.about.body | markdownify }}</div>

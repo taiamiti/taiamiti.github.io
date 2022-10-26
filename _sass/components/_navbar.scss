@@ -21,6 +21,17 @@
       color: darken($primary, 10%);
     }
   }
+  .navbar-lang {
+    color: white;
+    border: 5px;
+    @include script-font;
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      color: $primary;
+    }
+  }
   .navbar-nav {
     .nav-item {
       .nav-link {
