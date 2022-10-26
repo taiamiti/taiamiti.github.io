@@ -14,10 +14,12 @@
       Menu
       <i class="fas fa-bars"></i>
     </button>
-    <div class="collapse navbar-collapse navbar-lang">
-      <a class="ml-3 mr-2" href="{{ site.url }}/home/"> EN </a>
+    <div class="collapse navbar-collapse navbar-lang ml-3">
+      [
+      <a class="mr-2" href="{{ site.url }}/home/"> {{site.langs[0] | upcase}} </a>
       |
-      <a class="ml-2" href="{{ site.url }}/home/fr"> FR </a>
+      <a class="ml-2" href="{{ site.url }}/home/fr"> {{site.langs[1] | upcase}} </a>
+      ]
     </div>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav text-uppercase ml-auto">
