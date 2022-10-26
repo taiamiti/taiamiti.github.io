@@ -1,11 +1,11 @@
 ---
-layout: page
-title: Privacy Policy
+layout: page_fr
+title: Politique de Confidentialité
 background: grey
 ---
 
 <div class="col-lg-12 text-center">
-	<h2 class="section-heading text-uppercase mb-5">Privacy Policy</h2>
+	<h2 class="section-heading text-uppercase mb-5">{{ page.title }}</h2>
 	This Privacy Policy describes how your personal information is collected, used, and shared when you
 	visit {{ site.title }} personal website.
 </div>

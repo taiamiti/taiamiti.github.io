@@ -175,8 +175,12 @@ en: &DEFAULT_EN
         icon: fas fa-map-marker-alt
 
   footer:
-    legal: "Privacy Policy"
-    acknowledgement : "Acknowledgement"
+    legal: 
+      title: "Privacy Policy"
+      url: "legal"
+    acknowledgement : 
+      title: "Acknowledgement"
+      url: "acknowledgement"
     social:
       - url: https://facebook.com/taiamiti.edmunds
         icon: "fab fa-facebook-f"
@@ -334,8 +338,13 @@ fr: &DEFAULT_FR
         icon: fas fa-map-marker-alt
 
   footer:
-    legal: "Confidentialité"
-    acknowledgement : "Remerciements"
+    legal: 
+      title: "Confidentialité"
+      url: "legal_fr"
+
+    acknowledgement :
+      title: "Remerciements"
+      url: "acknowledgement_fr"
     social:
       - url: https://facebook.com/taiamiti.edmunds
         icon: "fab fa-facebook-f"

@@ -1,7 +1,6 @@
 <!-- Footer -->
 <footer class="footer" id="footer" style="background-color: white">
   <div class="container">
-    {% if include.lang and include.lang != "" and include.lang != nil %}
     <div class="row align-items-center">
       <!-- Social Media -->
       <div class="col-md-3">
@@ -25,7 +24,8 @@
       <div class="col-md-3">
         <ul class="list-inline quicklinks">
           <li class="list-inline-item">
-            <a href="legal">{{ site.data.sitetext[include.lang].footer.legal | default:
+            <a href={{ site.data.sitetext[include.lang].footer.legal.url }}>{{
+              site.data.sitetext[include.lang].footer.legal.title | default:
               "Privacy Policy" }}</a>
           </li>
         </ul>
@@ -34,55 +34,15 @@
       <div class="col-md-3">
         <ul class="list-inline quicklinks">
           <li class="list-inline-item">
-            <a href="acknowledgement">{{ site.data.sitetext[include.lang].footer.acknowledgement | default:
+            <a href={{ site.data.sitetext[include.lang].footer.acknowledgement.url }}>{{
+              site.data.sitetext[include.lang].footer.acknowledgement.title | default:
               "Acknowledgement" }}</a>
           </li>
         </ul>
       </div>
     </div>
-    {% else %}
-    <div class="row align-items-center">
-      <!-- Social Media -->
-      <div class="col-md-3">
-        <ul class="list-inline social-buttons">
-          {% for link in site.data.sitetext.footer.social %}
-          <li class="list-inline-item">
-            {% if link.url %}
-            <a href="{{ link.url }}">
-              {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
-            </a>
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      <!-- Copyright -->
-      <div class="col-md-3">
-        <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
-      </div>
-      <!-- Legal -->
-      <div class="col-md-3">
-        <ul class="list-inline quicklinks">
-          <li class="list-inline-item">
-            <a href="legal">{{ site.data.sitetext.footer.legal | default:
-              "Privacy Policy" }}</a>
-          </li>
-        </ul>
-      </div>
-      <!-- Acknowledgement -->
-      <div class="col-md-3">
-        <ul class="list-inline quicklinks">
-          <li class="list-inline-item">
-            <a href="acknowledgement">{{ site.data.sitetext[include.lang].footer.acknowledgement | default:
-              "Acknowledgement" }}</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    {% endif %}
-  </div>
 </footer>
-{% if page.layout == "page" %}
+{% if page.layout == "page" or page.layout == "page_fr" %}
 <script>
   fixPageShort();
   function fixPageShort() {
