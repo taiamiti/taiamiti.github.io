@@ -16,7 +16,7 @@ remote_theme: taiamiti/taiamiti.github.io
 
 domain: taiamiti.github.io
 url    : "https://taiamiti.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/home" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 
 title      : Taiamiti Edmunds
 email      : taiamiti.edmunds@ml4everyone.com #this is also the email contact forms will go to
