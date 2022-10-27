@@ -38,7 +38,7 @@ en-AU:
 fr: &DEFAULT_FR
   nav:
     - title: "SERVICES"
-      section: services_fr
+      section: services
     - title: "PORTFOLIO"
       section: portfolio
     - title: "PORTRAIT"
