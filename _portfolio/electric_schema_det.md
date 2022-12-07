@@ -14,9 +14,9 @@ year: 2022
 categories: [Computer Vision, Deep Learning, 2D detection]
 client: Confidential
 ---
-Digitizing Single Line Diagrams (SLD) is a long and expensive process due to the large diversity of symbols with many occurences. 
+Digitizing Single Line Diagrams (SLD) is a long and expensive process due to the large diversity of symbols and the high number of occurences. 
 Recent advances in object detection and fine-grained image classification offer good solutions to detect and recognize electrical symbols
-from schemas. A proprietary database was constructed to train and evaluate state of the art solutions for spotting and then recognizing each symbol. 
+from schemas automatically. A proprietary database was constructed to train and evaluate state of the art solutions for spotting and then recognizing each symbol. 
 
 
 
