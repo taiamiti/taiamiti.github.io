@@ -18,6 +18,13 @@
               <p class="item-intro text-muted">{{ project.subtitle }}</p>
               <img class="img-fluid d-block mx-auto" src="{{ project.image }}" alt="{{ project.alt }}" />
               <p>{{ project.content }}</p>
+              <div class="text-left mb-2">
+                <ul>
+                  <li> <b>Year</b>: {{ project.year }} </li>
+                  <li> <b>Categories</b>: {{ project.categories | join: ", "}} </li>
+                  <li> <b>Client</b>: {{ project.client}} </li>
+                </ul>   
+              </div>
               <button class="btn btn-primary" data-dismiss="modal" type="button">
                 <i class="fas fa-times"></i>
                 {{ site.data.sitetext[include.lang].portfolio.closebutton |
@@ -48,6 +55,13 @@
               <p class="item-intro text-muted">{{ project.subtitle }}</p>
               <img class="img-fluid d-block mx-auto" src="{{ project.image }}" alt="{{ project.alt }}" />
               <p>{{ project.content }}</p>
+              <div class="text-left mb-2">
+                <ul>
+                   <li> <b>Year</b>: {{ project.year }} </li>
+                  <li> <b>Categories</b>: {{ project.categories | join: ", " }} </li>
+                  <li> <b>Client</b>: {{ project.client }} </li>
+                </ul>   
+              </div>
               <button class="btn btn-primary" data-dismiss="modal" type="button">
                 <i class="fas fa-times"></i>
                 {{ site.data.sitetext.portfolio.closebutton |
