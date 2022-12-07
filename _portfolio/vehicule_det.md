@@ -12,7 +12,7 @@ image: assets/img/portfolio/construction_site.png #main image, can be a link or 
 alt: image alt text
 
 
-year: 2022
+year: 2020
 categories: [Computer Vision, Deep Learning, 2D object detection]
 client: Confidential
 ---

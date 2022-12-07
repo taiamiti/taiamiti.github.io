@@ -15,9 +15,9 @@ year: 2022
 categories: [Computer Vision, Deep Learning, OCR, Key information extraction, NLP]
 client: ABPIA (startup)
 ---
-Accounting entry of invoices is a long and tedious task and many solutions exist on the market to help accelerate the process.
-Traditional image processing combined with rule-based algorithms suffer from generalising to the large diversity of invoice templates.
+Accounting entry of invoices is a tedious task and many solutions exist on the market to help accelerate the process.
+Traditional image processing combined with rule-based algorithms do not cope well with the growing diversity of invoice templates.
 Hence, deep learning based solutions with continuous training are now the leading tehnologies as they can adapt to new templates provided that 
-enough examplars are seen. In this work, a generic state of the art OCR service has been deployed in conjunction with a custom trained key information retrieval 
+enough examplars are seen. In this work, a generic state of the art OCR service has been deployed along with a custom trained key information retrieval 
 neural network model to infer the different accounting fields on the invoice. 
 

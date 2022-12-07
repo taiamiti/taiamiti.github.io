@@ -12,7 +12,7 @@ image: assets/img/portfolio/ocr_ctc.png #main image, can be a link or a file in 
 alt: image alt text
 
 year: 2020
-category: Computer Vision, Deep Learning, R&D, OCR
+category: [Computer Vision, Deep Learning, R&D, OCR, Text spotting, Text transcription]
 client: Cente Technique du Cuir (CTC)
 ---
 

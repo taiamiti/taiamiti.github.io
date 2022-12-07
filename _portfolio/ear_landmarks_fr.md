@@ -11,7 +11,7 @@ subtitle:
 image: assets/img/portfolio/ear_lmks.png #main image, can be a link or a file in assets/img/portfolio
 
 year: 2020
-categories: [Computer Vision, Deep Learning, 2D detection]
+categories: [Vision par ordinateur, Apprentissage profond, Détection de landmarks]
 client: MyFitSolutions (https://myfit-solutions.com)
 ---
 Afin de concevoir des écouteurs personnalisés, des scans 3d de l'oreille et de son canal sont nécessaires. Une solution basée sur des CNNs

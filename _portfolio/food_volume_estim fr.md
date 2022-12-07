@@ -1,18 +1,18 @@
 ---
 lang: "fr"
 caption: #what displays in the portfolio grid:
-  title: Food volume estimation
+  title: Estimation du volume des aliments
   subtitle: 
   thumbnail: assets/img/portfolio/food_scan_400_300.png
   
 #what displays when the item is clicked:
-title: Food volume estimation
+title: Estimation du volume des aliments
 subtitle: 
 image: assets/img/portfolio/food_scan_400_300.png #main image, can be a link or a file in assets/img/portfolio
 alt: image alt text
 
 year: 2019
-categories: [Computer Vision, Deep Learning, R&D, 3D, Structure from motion]
+categories: [Vision par ordinateur, Apprentissage profond, R&D, 3D, Structure from motion]
 client: SEB
 ---
 L'estimation du volume des aliments est un défi important avec de nombreuses applications allant de la mesure des calories dans un programme de contrôle de
