@@ -14,7 +14,7 @@ year: 2020
 categories: [Computer Vision, Deep Learning, 2D detection]
 client: MyFitSolutions (https://myfit-solutions.com)
 ---
-In order to design custom eartips, 3d scans of the ear and its canal are required. A solution based on deep CNNs
-has been developped in order to track ear landmarks during the scan. Inspired by facial landmarks research, a 
-deep learning based solution was trained on a proprietary database to detect ear landmarks from smartphone scans. The solution achieved high accuracy 
+In order to design custom eartips, 3d scans of the ear and its canal are required. A solution based on CNNs
+has been developped in order to track ear landmarks during smartphone scaning. Inspired by facial landmarks research, a 
+deep learning based solution was trained on a proprietary database to detect ear landmarks. The solution achieved high accuracy 
 and has been deployed successfully.

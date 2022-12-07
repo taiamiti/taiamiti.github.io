@@ -14,8 +14,8 @@ year: 2020
 categories: [Computer Vision, Deep Learning, 2D detection]
 client: MyFitSolutions (https://myfit-solutions.com)
 ---
-Afin de concevoir des embouts personnalisés, des scans 3d de l'oreille et de son canal sont nécessaires. Une solution basée sur des CNN profonds
-a été développée afin de suivre les points de repère de l'oreille pendant le scan. Inspiré par la recherche sur les repères faciaux, une solution basée sur l'apprentissage profond a été entraînée sur une base de données. 
-solution basée sur l'apprentissage profond a été entraînée sur une base de données propriétaire pour détecter les points de repère de l'oreille à partir de scans de smartphones. La solution a atteint une grande précision 
+Afin de concevoir des écouteurs personnalisés, des scans 3d de l'oreille et de son canal sont nécessaires. Une solution basée sur des CNNs
+a été développée afin de suivre les points de repère de l'oreille pendant le scan à partir d'un smartphone. Inspiré par la recherche sur les repères faciaux, une 
+solution basée sur l'apprentissage profond a été entraînée sur une base de données propriétaire. La solution a atteint une grande précision 
 et a été déployée avec succès.
 
