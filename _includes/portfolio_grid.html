@@ -12,7 +12,8 @@
       </div>
     </div>
     <div class="row">
-      {% for project in site.portfolio %}
+      {% assign projects = site.portfolio | where:'lang', include.lang %}
+      {% for project in projects %}
       <div class="col-md-4 col-sm-6 portfolio-item">
         <a class="portfolio-link" data-toggle="modal" href="#p{{ forloop.index }}">
           <div class="portfolio-hover">

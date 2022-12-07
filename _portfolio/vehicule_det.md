@@ -1,4 +1,5 @@
 ---
+lang: "en"
 caption: #what displays in the portfolio grid:
   title: Construction vehicle detection
   subtitle: 
