@@ -22,7 +22,7 @@ en: &DEFAULT_EN
     section: services
     list:
       - title: "Consulting"
-        desc: "Do you need insights on what AI can accomplish for your business? See how AI can add value to existing data. Get budget estimations
+        desc: "Do you need insights on what AI can accomplish for your business? See how AI can add value by leveraging existing data. Get budget estimations
          along with a Roadmap to integrate those solutions."
         icon: fas fa-lightbulb #find more at https://fontawesome.com/icons
       - title: "Prototyping"
@@ -65,7 +65,7 @@ en: &DEFAULT_EN
       - title: "PhD in Université Grenoble Alpes"
         year: "From 2013 to 2017"
         desc: "Thesis on the protection of 2D face identification systems against spoofing attacks at [GIPSA-LAB](http://www.gipsa-lab.fr/). I became a machine learning and computer vision specialist during that time."
-        image: assets/img/timeline/gipsa.png
+        image: assets/img/timeline/gipsa.jpeg
         alt: image alt text
       - title: "Debut at Neovision"
         year: "From 2017 to 2022"
@@ -261,7 +261,7 @@ fr: &DEFAULT_FR
         year: "De 2013 à 2017"
         desc: "Jai effectué ma thèse sur la protection des systèmes de reconnaissance de visage contre les attaques par présentation de leurres au
          [GIPSA-LAB](http://www.gipsa-lab.fr/). Je suis alors de venu un spécialiste du machine learning et de la vision par ordinteur."
-        image: assets/img/timeline/gipsa.png
+        image: assets/img/timeline/gipsa.jpeg
         alt: image alt text
       - title: "Début à Neovision"
         year: "De 2017 à 2022"
