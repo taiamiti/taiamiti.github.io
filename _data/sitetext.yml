@@ -87,7 +87,7 @@ en: &DEFAULT_EN
     over ocean related topics (aquaculture, reef monitoring, ...) as well as waste management projects as Tahiti could benefit greatly from innovations in 
     these areas.
     "
-    photo: assets/img/timeline/tahiti.png
+    photo: assets/img/photo_cv.png
     section: about
 
   clients:
@@ -287,7 +287,7 @@ fr: &DEFAULT_FR
     par les projets liés à l'océan (aquaculture, surveillance du récif, ...) et les sujets autour du tri des déchets car la polynésie pourrait fortement 
     bénéficier des avancées dans ces domaines. 
     "
-    photo: assets/img/timeline/tahiti.png
+    photo: assets/img/photo_cv.png
     section: portrait
 
   clients:
