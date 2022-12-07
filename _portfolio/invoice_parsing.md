@@ -11,7 +11,7 @@ image: assets/img/portfolio/invoice.gif #main image, can be a link or a file in 
 alt: image alt text
 
 year: 2022
-categories: [Computer Vision, Deep Learning, OCR, Key information extraction]
+categories: [Computer Vision, Deep Learning, OCR, Key information extraction, NLP]
 client: ABPIA (startup)
 ---
 Accounting entry of invoices is a long and tedious task and many solutions exist on the market to help accelerate the process.
