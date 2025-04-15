@@ -36,7 +36,7 @@ en: &DEFAULT_EN
         desc: "Internalize the competence to maintain and improve AI solutions through code review and training sessions."
         icon: fas fa-cogs
       - title: "Teaching"
-        desc: "Coming soon..."
+        desc: "Introduction to AI tools in 2025"
         icon: fas fa-user-graduate
 
   portfolio:
@@ -103,6 +103,12 @@ en: &DEFAULT_EN
     max-height: 100px
     horizontal-scrolling: "" #"yes/no"
     list:
+      - title: "UPF"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients_/upf.png
+      - title: "Criobe"
+        url: https://github.com/raviriley/agency-jekyll-theme
+        logo: assets/img/clients_/criobe.png
       - title: "CTC"
         url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients_/logo_ctc.png
@@ -234,8 +240,8 @@ fr: &DEFAULT_FR
         desc: "Internalisation de la compétence IA afin de maintenir et d'améliorer
         la solution développée au travers de revue de code et de sessions de formation."
         icon: fas fa-cogs
-      - title: "Enseignement"
-        desc: "A venir..."
+      - title: "Formation"
+        desc: "Introduction aux outils d'IA tel que ChatGPT et Midjourney"
         icon: fas fa-user-graduate
 
   portfolio:
