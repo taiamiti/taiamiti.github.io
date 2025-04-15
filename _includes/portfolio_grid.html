@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="row">
-      {% assign projects = site.portfolio | where:'lang', include.lang %}
+      {% assign projects = site.portfolio | where:'lang', include.lang | reverse %}
       {% for project in projects %}
       <div class="col-md-4 col-sm-6 portfolio-item">
         <a class="portfolio-link" data-toggle="modal" href="#p{{ forloop.index }}">

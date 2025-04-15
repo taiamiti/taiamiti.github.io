@@ -1,0 +1,72 @@
+<!-- Blog Modals -->
+{% assign posts = site.posts | where:'lang', include.lang %}
+{% for post in posts %}
+  {% if include.lang and include.lang != "" and include.lang != nil %}
+    <div class="blog-modal modal fade" id="b{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Blog Post Details -->
+                  <h2 class="text-uppercase">{{ post.title }}</h2>
+                  <p class="item-intro text-muted">
+                    {{ post.date | date: "%B %d, %Y" }}{% if post.categories %} | {{ post.categories | join: ", " }}{% endif %}
+                  </p>
+                  {% if post.thumbnail %}
+                    <img class="img-fluid d-block mx-auto" src="{{ post.thumbnail }}" alt="{{ post.title }}" />
+                  {% endif %}
+                  <p>{{ post.content }}</p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    {{ site.data.sitetext[include.lang].blog.closebutton | default: "Close Post" }}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% else %}
+    <div class="blog-modal modal fade" id="b{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Blog Post Details -->
+                  <h2 class="text-uppercase">{{ post.title }}</h2>
+                  <p class="item-intro text-muted">
+                    {{ post.date | date: "%B %d, %Y" }}{% if post.categories %} | {{ post.categories | join: ", " }}{% endif %}
+                  </p>
+                  {% if post.thumbnail %}
+                    <img class="img-fluid d-block mx-auto" src="{{ post.thumbnail }}" alt="{{ post.title }}" />
+                  {% endif %}
+                  <p>{{ post.content }}</p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    {{ site.data.sitetext.blog.closebutton | default: "Close Post" }}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+<!-- End Blog Modals -->

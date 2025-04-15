@@ -45,6 +45,12 @@ en: &DEFAULT_EN
     section: portfolio
     closebutton: "Close Project"
 
+  blog:
+    title: "Blog"
+    text: "Posts."
+    section: blog
+    closebutton: "Close"
+
   timeline:
     title: "Timeline"
     text: ""
@@ -234,9 +240,15 @@ fr: &DEFAULT_FR
 
   portfolio:
     title: "Portfolio"
-    text: "Realisations and center of interests."
+    text: "Realisations depuis 2017."
     section: portfolio
-    closebutton: "Close Project"
+    closebutton: "Fermer"
+
+  blog:
+    title: "Blog"
+    text: "Articles de blog."
+    section: blog
+    closebutton: "Fermer"
 
   timeline:
     title: "Parcours"

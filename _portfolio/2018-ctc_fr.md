@@ -11,7 +11,7 @@ subtitle:
 image: assets/img/portfolio/ocr_ctc.png #main image, can be a link or a file in assets/img/portfolio
 alt: image alt text
 
-year: 2020
+year: 2018
 category: [Vision par ordinateur, Apprentissage profond, OCR]
 client: Cente Technique du Cuir (CTC)
 ---

@@ -1,0 +1,63 @@
+{% if include.lang and include.lang != "" and include.lang != nil %}
+  <section class="bg-light page-section" id="{{ site.data.sitetext[include.lang].blog.section | default: "blog" }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ site.data.sitetext[include.lang].blog.title | markdownify | default: "Blog" }}</h2>
+          <h3 class="section-subheading text-muted">{{ site.data.sitetext[include.lang].blog.text | markdownify }}</h3>
+        </div>
+      </div>
+      <div class="row">
+        {% assign posts = site.posts | where:'lang', include.lang %}
+        {% for post in posts %}
+        <div class="col-md-4 col-sm-6 blog-item">
+          <a class="blog-link" data-toggle="modal" href="#b{{ forloop.index }}">
+            <div class="blog-hover">
+              <div class="blog-hover-content">
+                <i class="{{ site.data.style.blog_icon | default: "fas fa-plus fa-3x" }}"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{{ post.thumbnail }}" alt="">
+          </a>
+          <div class="blog-caption">
+            <h4>{{ post.title }}</h4>
+            <p class="text-muted">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% else %}
+  <section class="bg-light page-section" id="{{ site.data.sitetext.blog.section | default: "blog" }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ site.data.sitetext.blog.title | markdownify | default: "Blog" }}</h2>
+          <h3 class="section-subheading text-muted">{{ site.data.sitetext.blog.text | markdownify }}</h3>
+        </div>
+      </div>
+      <div class="row">
+        {% for post in site.posts %}
+        <div class="col-md-4 col-sm-6 blog-item">
+          <a class="blog-link" data-toggle="modal" href="#b{{ forloop.index }}">
+            <div class="blog-hover">
+              <div class="blog-hover-content">
+                <i class="{{ site.data.style.blog_icon | default: "fas fa-plus fa-3x" }}"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{{ post.thumbnail }}" alt="">
+          </a>
+          <div class="blog-caption">
+            <h4>{{ post.title }}</h4>
+            <p class="text-muted">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+  
+  {% include blog_modals.html %}
+  

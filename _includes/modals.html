@@ -1,5 +1,5 @@
 <!-- Portfolio Modals -->
-{% assign projects = site.portfolio | where:'lang', include.lang %}
+{% assign projects = site.portfolio | where:'lang', include.lang | reverse %}
 {% for project in projects %}
 {% if include.lang and include.lang != "" and include.lang != nil %}
 <div class="portfolio-modal modal fade" id="p{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">

@@ -15,6 +15,8 @@ en: &DEFAULT_EN
       section: services
     - title: "Portfolio"
       section: portfolio
+    - title: "Blog"
+      section: blog
     - title: "About"
       section: about
     - title: "Timeline"
@@ -41,6 +43,8 @@ fr: &DEFAULT_FR
       section: services
     - title: "PORTFOLIO"
       section: portfolio
+    - title: "Blog"
+      section: blog
     - title: "PORTRAIT"
       section: portrait
     - title: "PARCOURS"
