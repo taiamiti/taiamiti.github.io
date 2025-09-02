@@ -21,8 +21,6 @@ en: &DEFAULT_EN
       section: about
     - title: "Timeline"
       section: timeline
-    - title: "Clients"
-      section: clients
     - title: "Contact"
       section: contact
 
@@ -49,7 +47,5 @@ fr: &DEFAULT_FR
       section: portrait
     - title: "PARCOURS"
       section: parcours
-    - title: "CLIENTS"
-      section: clients
     - title: "CONTACT"
       section: contact
