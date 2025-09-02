@@ -96,43 +96,6 @@ en: &DEFAULT_EN
     photo: assets/img/photo_cv.png
     section: about
 
-  clients:
-    title: Clients
-    text: Successful collaborations
-    section: clients
-    max-height: 100px
-    horizontal-scrolling: "" #"yes/no"
-    list:
-      - title: "UPF"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/upf.png
-      - title: "Criobe"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/criobe.png
-      - title: "CTC"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/logo_ctc.png
-      - title: "Michelin"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/michelin.png
-      - title: "MyFitSolutions"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/myfitsolutions.png
-      - title: "Scneider Electric"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/schneider_elec.png
-      - title: "Groupe SEB"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/seb-brand-logo-prod.png
-      - title: "Safran"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/safran.png  
-      - title: "Transarc"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/transarc.png
-      - title: "Enlaps"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/enlaps.png
 
   # team:
   #   title: "OUR AMAZING TEAM"
@@ -308,37 +271,6 @@ fr: &DEFAULT_FR
     photo: assets/img/photo_cv.png
     section: portrait
 
-  clients:
-    title: Clients
-    text: Collaborations notables
-    section: clients
-    max-height: 100px
-    horizontal-scrolling: "" #"yes/no"
-    list:
-      - title: "CTC"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/logo_ctc.png
-      - title: "Michelin"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/michelin.png
-      - title: "MyFitSolutions"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/myfitsolutions.png
-      - title: "Scneider Electric"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/schneider_elec.png
-      - title: "Groupe SEB"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/seb-brand-logo-prod.png
-      - title: "Safran"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/safran.png  
-      - title: "Transarc"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/transarc.png
-      - title: "Enlaps"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients_/enlaps.png
 
   contact:
     title: "Contact"
