@@ -28,7 +28,16 @@ bundle exec jekyll serve --trace
 ### Dependencies
 - Ruby with Bundler
 - Jekyll with remote theme support
-- GitHub Pages compatible gems
+- GitHub Pages compatible gems (see Gemfile for specifics)
+
+### Bundle Management
+```bash
+# Update dependencies after any Gemfile changes
+bundle update
+
+# Force clean install if needed
+bundle clean --force && bundle install
+```
 
 ## Architecture
 
@@ -51,7 +60,15 @@ bundle exec jekyll serve --trace
 - **Multilingual Content**: Each content piece has English and French versions
 - **YAML Configuration**: Site text and data centralized in `_data/sitetext.yml`
 - **Portfolio Projects**: Markdown files with YAML frontmatter for project details
+- **Blog Posts**: Language-specific posts in `_posts/` with `_fr.md` suffix pattern
 - **Remote Theme**: Uses `taiamiti/taiamiti.github.io` as remote theme
+
+### Portfolio Structure
+Each portfolio item follows this pattern:
+- **English version**: `_portfolio/YYYY-project-name.md`
+- **French version**: `_portfolio/YYYY-project-name_fr.md` 
+- **Required frontmatter**: `lang`, `caption` (title/subtitle/thumbnail), `title`, `subtitle`, `image`, `year`, `category`, `client`
+- **Assets**: Corresponding images in `assets/img/portfolio/`
 
 ### Layout System
 - Separate layouts for English (`default.html`, `home.html`) and French (`default_fr.html`, `home_fr.html`)
@@ -69,6 +86,12 @@ bundle exec jekyll serve --trace
 - Main content: Edit `_data/sitetext.yml` 
 - Navigation: Edit `_data/navigation.yml`
 - Styling: Modify SCSS files in `_sass/`
+- Site-wide styling variables: `_data/style.yml`
+
+### Adding Blog Posts
+1. Create markdown file in `_posts/` with date prefix: `YYYY-MM-DD-title.md`
+2. Include French version with `_fr.md` suffix
+3. Use standard Jekyll post frontmatter with `lang` field
 
 ## Deployment
 
