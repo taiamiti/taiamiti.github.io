@@ -15,29 +15,53 @@ en: &DEFAULT_EN
     text: Taiamiti  Edmunds
     button: Tell Me More
     buttonlink: "#services"
+    cta_buttons:
+      - title: "On-Demand Consulting"
+        url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
+        class: "btn btn-primary btn-xl text-uppercase mr-3"
+      - title: "Data & AI Diagnostic"
+        url: "https://forms.gle/PLACEHOLDER-diagnostic"
+        class: "btn btn-primary btn-xl text-uppercase mr-3"
+      - title: "GenAI Workshop"
+        url: "https://forms.gle/PLACEHOLDER-genai"
+        class: "btn btn-primary btn-xl text-uppercase mr-3"
+      - title: "Custom AI Solutions"
+        url: "https://forms.gle/PLACEHOLDER-custom"
+        class: "btn btn-primary btn-xl text-uppercase"
 
   services:
     title: "Services"
-    text: "Example of missions done in the past"
+    text: "Core AI consulting offerings"
     section: services
     list:
-      - title: "Consulting"
-        desc: "Do you need insights on what AI can accomplish for your business? See how AI can add value by leveraging existing data. Get budget estimations
-         along with a Roadmap to integrate those solutions."
-        icon: fas fa-lightbulb #find more at https://fontawesome.com/icons
-      - title: "Prototyping"
-        desc: "Get a first solution with extensive performance evaluations. The goal is to highlight limitations and improvements required to obtain a solution
-        suitable for production."
-        icon: fas fa-pen
-      - title: "Deployment"
-        desc: "Deploy models through APIs once performance are satisfactory. Deployments can be on cloud or on device (laptops, smartphones)."
-        icon: fas fa-industry
-      - title: "Skills transfer"
-        desc: "Internalize the competence to maintain and improve AI solutions through code review and training sessions."
+      - title: "On-Demand Consulting"
+        desc: "Flexible AI strategy and technical guidance when you need it. Get expert advice on AI implementation, technology selection, and problem-solving through phone, video, or email consultations."
+        icon: fas fa-lightbulb
+        cta:
+          title: "Get Consulting"
+          url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
+          class: "btn btn-primary btn-lg text-uppercase mt-3"
+      - title: "Data & AI Diagnostic Workshop"
+        desc: "Comprehensive assessment of your organization's AI readiness. Identify opportunities, evaluate data quality, and create a roadmap for AI adoption with actionable recommendations."
+        icon: fas fa-chart-line
+        cta:
+          title: "Book Diagnostic"
+          url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
+          class: "btn btn-primary btn-lg text-uppercase mt-3"
+      - title: "Generative AI Workshop"
+        desc: "Hands-on training for teams and executives on leveraging generative AI tools. Learn practical applications for content creation, automation, and decision support with ethical considerations."
+        icon: fas fa-robot
+        cta:
+          title: "Book Workshop"
+          url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
+          class: "btn btn-primary btn-lg text-uppercase mt-3"
+      - title: "Custom AI Solutions"
+        desc: "End-to-end development of tailored AI systems for your specific needs. From data preparation through deployment, we build production-ready solutions that deliver measurable business value."
         icon: fas fa-cogs
-      - title: "Teaching"
-        desc: "Introduction to AI tools in 2025"
-        icon: fas fa-user-graduate
+        cta:
+          title: "Start Project"
+          url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
+          class: "btn btn-primary btn-lg text-uppercase mt-3"
 
   portfolio:
     title: "Portfolio"
@@ -181,31 +205,53 @@ fr: &DEFAULT_FR
     text: Taiamiti  Edmunds
     button: Plus d'infos
     buttonlink: "#services"
+    cta_buttons:
+      - title: "Consulting à la Demande"
+        url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
+        class: "btn btn-primary btn-xl text-uppercase mr-3"
+      - title: "Diagnostic IA & Données"
+        url: "https://forms.gle/PLACEHOLDER-diagnostic"
+        class: "btn btn-primary btn-xl text-uppercase mr-3"
+      - title: "Atelier IA Générative"
+        url: "https://forms.gle/PLACEHOLDER-genai"
+        class: "btn btn-primary btn-xl text-uppercase mr-3"
+      - title: "Solutions IA Sur-Mesure"
+        url: "https://forms.gle/PLACEHOLDER-custom"
+        class: "btn btn-primary btn-xl text-uppercase"
 
   services:
     title: "Services"
-    text: "Exemples de missions"
+    text: "Mes Prestations"
     section: services
     list:
-      - title: "Consulting"
-        desc: "Savez vous ce que l'IA peut vous apporter? Découvreez comment l'IA peut valoriser vos données métier. Obtenez 
-        des estimations de budget et une roadmap pour implémenter des solutions IA adaptées à vos besoins."
-        icon: fas fa-lightbulb #find more at https://fontawesome.com/icons
-      - title: "Prototypage"
-        desc: "Obtenez une première solution permettant d'évaluer les performances des modèles sur votre cas d'usage. L'objectif est de mettre en avant les
-        limitations et améliorations requises pour obtenir une solution industrialisable."
-        icon: fas fa-pen
-      - title: "Déploiement"
-        desc: "Déploiement des modèles sous forme d'API après valiation des perfomances. Cette étape peut être réalisée sur le 
-        cloud ou en local (laptops, smartphones)"
-        icon: fas fa-industry
-      - title: "Transfer de compétences"
-        desc: "Internalisation de la compétence IA afin de maintenir et d'améliorer
-        la solution développée au travers de revue de code et de sessions de formation."
+      - title: "Consulting à la Demande"
+        desc: "Conseils stratégiques et techniques en IA selon vos besoins. Obtenez l'expertise d'un spécialiste pour l'implémentation, le choix technologique et la résolution de problèmes par téléphone, visio ou email."
+        icon: fas fa-lightbulb
+        cta:
+          title: "Demander Conseil"
+          url: "https://forms.gle/s9sQJUrQRasrGXtg9"
+          class: "btn btn-primary btn-lg text-uppercase mt-3"
+      - title: "Diagnostic IA & Données"
+        desc: "Évaluation complète de la maturité IA de votre organisation. Identifiez les opportunités, évaluez la qualité des données et créez une roadmap d'adoption avec des recommandations concrètes."
+        icon: fas fa-chart-line
+        cta:
+          title: "Réserver Diagnostic"
+          url: "https://forms.gle/s9sQJUrQRasrGXtg9"
+          class: "btn btn-primary btn-lg text-uppercase mt-3"
+      - title: "Atelier IA Générative"
+        desc: "Formation pratique pour équipes et dirigeants sur l'utilisation des outils d'IA générative. Apprenez les applications concrètes pour la création de contenu, l'automatisation et l'aide à la décision."
+        icon: fas fa-robot
+        cta:
+          title: "Réserver Atelier"
+          url: "https://forms.gle/s9sQJUrQRasrGXtg9"
+          class: "btn btn-primary btn-lg text-uppercase mt-3"
+      - title: "Solutions IA Sur-Mesure"
+        desc: "Développement complet de systèmes IA adaptés à vos besoins spécifiques. De la préparation des données au déploiement, nous créons des solutions prêtes pour la production."
         icon: fas fa-cogs
-      - title: "Formation"
-        desc: "Introduction aux outils d'IA tel que ChatGPT et Midjourney"
-        icon: fas fa-user-graduate
+        cta:
+          title: "Démarrer Projet"
+          url: "https://forms.gle/s9sQJUrQRasrGXtg9"
+          class: "btn btn-primary btn-lg text-uppercase mt-3"
 
   portfolio:
     title: "Portfolio"
