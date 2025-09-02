@@ -7,6 +7,16 @@
 .btn-xl {
   font-size: 18px;
   padding: 20px 40px;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .btn-xl {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-right: 0 !important;
+  }
 }
 
 .btn-primary {
