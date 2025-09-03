@@ -1,161 +1,36 @@
-<!-- Enhanced Portfolio Modals -->
+<!-- Portfolio Modals -->
 {% assign projects = site.portfolio | where:'lang', include.lang | reverse %}
 {% for project in projects %}
 {% if include.lang and include.lang != "" and include.lang != nil %}
-
-<!-- Determine service badge styling -->
-{% assign service_badge_text = "" %}
-{% assign service_badge_class = "" %}
-{% if project.service_type == "Data & AI Diagnostic Workshop" or project.service_type == "Atelier Diagnostic Données & IA" %}
-  {% if include.lang == "fr" %}
-    {% assign service_badge_text = "Diagnostic Données & IA" %}
-  {% else %}
-    {% assign service_badge_text = "Data & AI Diagnostic" %}
-  {% endif %}
-  {% assign service_badge_class = "badge-warning" %}
-{% elsif project.service_type == "Generative AI Workshop" or project.service_type == "Formation IA Générative" %}
-  {% if include.lang == "fr" %}
-    {% assign service_badge_text = "Formation IA Générative" %}
-  {% else %}
-    {% assign service_badge_text = "Generative AI Workshop" %}
-  {% endif %}
-  {% assign service_badge_class = "badge-success" %}
-{% elsif project.service_type == "Custom AI Solutions" or project.service_type == "Solutions IA Sur Mesure" %}
-  {% if include.lang == "fr" %}
-    {% assign service_badge_text = "Solutions IA Sur Mesure" %}
-  {% else %}
-    {% assign service_badge_text = "Custom AI Solutions" %}
-  {% endif %}
-  {% assign service_badge_class = "badge-primary" %}
-{% else %}
-  {% assign service_badge_text = "Custom Solution" %}
-  {% assign service_badge_class = "badge-primary" %}
-{% endif %}
-
 <div class="portfolio-modal modal fade" id="p{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="close-modal" data-dismiss="modal">
         <div class="lr">
           <div class="rl"></div>
         </div>
       </div>
-      
-      <!-- Service Type Header Banner -->
-      <div class="modal-header-banner text-center py-3">
-        <span class="badge {{ service_badge_class }} badge-lg">{{ service_badge_text }}</span>
-      </div>
-      
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
-          <!-- Main Content Column -->
-          <div class="col-lg-8">
-            <div class="modal-body-main">
-              <!-- Hero Section -->
-              <div class="modal-hero mb-4">
-                <h1 class="modal-title">{{ project.title }}</h1>
-                <p class="modal-subtitle text-muted">{{ project.subtitle }}</p>
-                {% if project.business_impact %}
-                  <div class="business-impact-highlight">
-                    <i class="fas fa-chart-line me-2"></i>
-                    <span>{{ project.business_impact }}</span>
-                  </div>
-                {% endif %}
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">{{ project.title }}</h2>
+              <p class="item-intro text-muted">{{ project.subtitle }}</p>
+              <img class="img-fluid d-block mx-auto" src="{{ project.image | relative_url }}" alt="{{ project.alt }}" />
+              <p>{{ project.content }}</p>
+              <div class="text-left mb-2">
+                <ul>
+                  <li> <b>Year</b>: {{ project.year }} </li>
+                  <li> <b>Categories</b>: {{ project.categories | join: ", "}} </li>
+                  <li> <b>Client</b>: {{ project.client}} </li>
+                </ul>   
               </div>
-              
-              <!-- Project Image -->
-              {% if project.image %}
-              <div class="project-image mb-4">
-                <img class="img-fluid rounded" src="{{ project.image | relative_url }}" alt="{{ project.alt }}" />
-              </div>
-              {% endif %}
-              
-              <!-- Sectioned Content -->
-              <div class="project-content">
-                {{ project.content }}
-              </div>
-              
-              <!-- Action Buttons -->
-              <div class="modal-actions mt-4 pt-3 border-top text-center">
-                <button class="btn btn-primary btn-lg" data-dismiss="modal" type="button">
-                  <i class="fas fa-times me-2"></i>
-                  {% if include.lang == "fr" %}Fermer{% else %}Close{% endif %}
-                </button>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Sidebar Column -->
-          <div class="col-lg-4">
-            <div class="modal-sidebar">
-              
-              <!-- Business Impact Card -->
-              {% if project.outcome_metrics %}
-              <div class="info-card mb-4">
-                <h3 class="info-card-title">
-                  {% if include.lang == "fr" %}Impact Métier{% else %}Business Impact{% endif %}
-                </h3>
-                <ul class="outcome-metrics">
-                  {% for metric in project.outcome_metrics %}
-                  <li><i class="fas fa-check-circle text-success me-2"></i>{{ metric }}</li>
-                  {% endfor %}
-                </ul>
-              </div>
-              {% endif %}
-              
-              <!-- Quick Facts Card -->
-              <div class="info-card mb-4">
-                <h3 class="info-card-title">
-                  {% if include.lang == "fr" %}Détails{% else %}Project Details{% endif %}
-                </h3>
-                <div class="quick-facts">
-                  <div class="fact-item">
-                    <span class="fact-label">{% if include.lang == "fr" %}Année{% else %}Year{% endif %}:</span>
-                    <span class="fact-value">{{ project.year }}</span>
-                  </div>
-                  <div class="fact-item">
-                    <span class="fact-label">{% if include.lang == "fr" %}Client{% else %}Client{% endif %}:</span>
-                    <span class="fact-value">{{ project.client }}</span>
-                  </div>
-                  <div class="fact-item">
-                    <span class="fact-label">{% if include.lang == "fr" %}Service{% else %}Service{% endif %}:</span>
-                    <span class="fact-value">{{ service_badge_text }}</span>
-                  </div>
-                  {% if project.category %}
-                  <div class="fact-item">
-                    <span class="fact-label">{% if include.lang == "fr" %}Catégories{% else %}Categories{% endif %}:</span>
-                    <span class="fact-value">{{ project.category | join: ", " }}</span>
-                  </div>
-                  {% endif %}
-                </div>
-              </div>
-              
-              <!-- Service CTA Card -->
-              <div class="info-card">
-                <h3 class="info-card-title">
-                  {% if include.lang == "fr" %}Intéressé par ce Service?{% else %}Interested in This Service?{% endif %}
-                </h3>
-                <p class="small text-muted">
-                  {% if include.lang == "fr" %}
-                    Découvrez comment ce service peut bénéficier à votre organisation.
-                  {% else %}
-                    Learn how this service can benefit your organization.
-                  {% endif %}
-                </p>
-                {% if project.service_type == "Data & AI Diagnostic Workshop" or project.service_type == "Atelier Diagnostic Données & IA" %}
-                  <a href="{% if include.lang == 'fr' %}https://forms.gle/s9sQJUrQRasrGXtg9{% else %}https://forms.gle/DhZVHqiKvFXUrsDY6{% endif %}" class="btn btn-outline-warning btn-sm w-100" target="_blank" rel="noopener noreferrer">
-                    {% if include.lang == "fr" %}Réserver un Atelier{% else %}Book Workshop{% endif %}
-                  </a>
-                {% elsif project.service_type == "Generative AI Workshop" or project.service_type == "Formation IA Générative" %}
-                  <a href="{% if include.lang == 'fr' %}https://forms.gle/s9sQJUrQRasrGXtg9{% else %}https://forms.gle/DhZVHqiKvFXUrsDY6{% endif %}" class="btn btn-outline-success btn-sm w-100" target="_blank" rel="noopener noreferrer">
-                    {% if include.lang == "fr" %}Réserver une Formation{% else %}Book Workshop{% endif %}
-                  </a>
-                {% else %}
-                  <a href="{% if include.lang == 'fr' %}https://forms.gle/s9sQJUrQRasrGXtg9{% else %}https://forms.gle/DhZVHqiKvFXUrsDY6{% endif %}" class="btn btn-outline-primary btn-sm w-100" target="_blank" rel="noopener noreferrer">
-                    {% if include.lang == "fr" %}Démarrer un Projet{% else %}Start Project{% endif %}
-                  </a>
-                {% endif %}
-              </div>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                {{ site.data.sitetext[include.lang].portfolio.closebutton |
+                default: "Close Project" }}
+              </button>
             </div>
           </div>
         </div>
@@ -164,129 +39,35 @@
   </div>
 </div>
 {% else %}
-
-<!-- Determine service badge styling for English -->
-{% assign service_badge_text = "" %}
-{% assign service_badge_class = "" %}
-{% if project.service_type == "Data & AI Diagnostic Workshop" %}
-  {% assign service_badge_text = "Data & AI Diagnostic" %}
-  {% assign service_badge_class = "badge-warning" %}
-{% elsif project.service_type == "Generative AI Workshop" %}
-  {% assign service_badge_text = "Generative AI Workshop" %}
-  {% assign service_badge_class = "badge-success" %}
-{% elsif project.service_type == "Custom AI Solutions" %}
-  {% assign service_badge_text = "Custom AI Solutions" %}
-  {% assign service_badge_class = "badge-primary" %}
-{% else %}
-  {% assign service_badge_text = "Custom Solution" %}
-  {% assign service_badge_class = "badge-primary" %}
-{% endif %}
-
 <div class="portfolio-modal modal fade" id="p{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="close-modal" data-dismiss="modal">
         <div class="lr">
           <div class="rl"></div>
         </div>
       </div>
-      
-      <!-- Service Type Header Banner -->
-      <div class="modal-header-banner text-center py-3">
-        <span class="badge {{ service_badge_class }} badge-lg">{{ service_badge_text }}</span>
-      </div>
-      
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
-          <!-- Main Content Column -->
-          <div class="col-lg-8">
-            <div class="modal-body-main">
-              <!-- Hero Section -->
-              <div class="modal-hero mb-4">
-                <h1 class="modal-title">{{ project.title }}</h1>
-                <p class="modal-subtitle text-muted">{{ project.subtitle }}</p>
-                {% if project.business_impact %}
-                  <div class="business-impact-highlight">
-                    <i class="fas fa-chart-line me-2"></i>
-                    <span>{{ project.business_impact }}</span>
-                  </div>
-                {% endif %}
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">{{ project.title }}</h2>
+              <p class="item-intro text-muted">{{ project.subtitle }}</p>
+              <img class="img-fluid d-block mx-auto" src="{{ project.image | relative_url }}" alt="{{ project.alt }}" />
+              <p>{{ project.content }}</p>
+              <div class="text-left mb-2">
+                <ul>
+                   <li> <b>Year</b>: {{ project.year }} </li>
+                  <li> <b>Categories</b>: {{ project.categories | join: ", " }} </li>
+                  <li> <b>Client</b>: {{ project.client }} </li>
+                </ul>   
               </div>
-              
-              <!-- Project Image -->
-              {% if project.image %}
-              <div class="project-image mb-4">
-                <img class="img-fluid rounded" src="{{ project.image | relative_url }}" alt="{{ project.alt }}" />
-              </div>
-              {% endif %}
-              
-              <!-- Sectioned Content -->
-              <div class="project-content">
-                {{ project.content }}
-              </div>
-              
-              <!-- Action Buttons -->
-              <div class="modal-actions mt-4 pt-3 border-top text-center">
-                <button class="btn btn-primary btn-lg" data-dismiss="modal" type="button">
-                  <i class="fas fa-times me-2"></i>Close
-                </button>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Sidebar Column -->
-          <div class="col-lg-4">
-            <div class="modal-sidebar">
-              
-              <!-- Business Impact Card -->
-              {% if project.outcome_metrics %}
-              <div class="info-card mb-4">
-                <h3 class="info-card-title">Business Impact</h3>
-                <ul class="outcome-metrics">
-                  {% for metric in project.outcome_metrics %}
-                  <li><i class="fas fa-check-circle text-success me-2"></i>{{ metric }}</li>
-                  {% endfor %}
-                </ul>
-              </div>
-              {% endif %}
-              
-              <!-- Quick Facts Card -->
-              <div class="info-card mb-4">
-                <h3 class="info-card-title">Project Details</h3>
-                <div class="quick-facts">
-                  <div class="fact-item">
-                    <span class="fact-label">Year:</span>
-                    <span class="fact-value">{{ project.year }}</span>
-                  </div>
-                  <div class="fact-item">
-                    <span class="fact-label">Client:</span>
-                    <span class="fact-value">{{ project.client }}</span>
-                  </div>
-                  <div class="fact-item">
-                    <span class="fact-label">Service:</span>
-                    <span class="fact-value">{{ service_badge_text }}</span>
-                  </div>
-                  {% if project.category %}
-                  <div class="fact-item">
-                    <span class="fact-label">Categories:</span>
-                    <span class="fact-value">{{ project.category | join: ", " }}</span>
-                  </div>
-                  {% endif %}
-                </div>
-              </div>
-              
-              <!-- Service CTA Card -->
-              <div class="info-card">
-                <h3 class="info-card-title">Interested in This Service?</h3>
-                <p class="small text-muted">Learn how this service can benefit your organization.</p>
-                {% if project.service_type == "Data & AI Diagnostic Workshop" %}
-                  <a href="https://forms.gle/DhZVHqiKvFXUrsDY6" class="btn btn-outline-warning btn-sm w-100" target="_blank" rel="noopener noreferrer">Book Workshop</a>
-                {% elsif project.service_type == "Generative AI Workshop" %}
-                  <a href="https://forms.gle/DhZVHqiKvFXUrsDY6" class="btn btn-outline-success btn-sm w-100" target="_blank" rel="noopener noreferrer">Book Workshop</a>
-                {% else %}
-                  <a href="https://forms.gle/DhZVHqiKvFXUrsDY6" class="btn btn-outline-primary btn-sm w-100" target="_blank" rel="noopener noreferrer">Start Project</a>
-                {% endif %}
-              </div>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                {{ site.data.sitetext.portfolio.closebutton |
+                default: "Close Project" }}
+              </button>
             </div>
           </div>
         </div>

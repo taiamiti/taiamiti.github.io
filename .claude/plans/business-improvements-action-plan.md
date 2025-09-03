@@ -34,21 +34,12 @@
 - [x] Fix navbar occlusion issues and asset loading problems
 - [x] Resolve French page asset path issues with `relative_url` filters
 
-### 1.3 Enhance Portfolio with Business Impact ✅ COMPLETED
-- [x] Implement service category filtering system with interactive tabs
-- [x] Create 8 comprehensive portfolio entries showcasing all service types:
-  - [x] 5 Data & AI Diagnostic Workshop case studies
-  - [x] 3 Generative AI Workshop case studies
-- [x] Rewrite portfolio project descriptions to include:
-  - [x] Business problem statement
-  - [x] AI techniques and approach used
-  - [x] Quantifiable outcomes (time saved, accuracy improvement, cost reduction)
-- [x] Enhanced modal dialogs with service page inspired professional layout:
-  - [x] Two-column layout with main content and business impact sidebar
-  - [x] Service type header banners with color-coded badges
-  - [x] Business impact metrics and quick facts cards
-  - [x] Direct Google form integration for service booking
-  - [x] Comprehensive responsive design and mobile optimization
+### 1.3 Enhance Portfolio with Business Impact
+- [ ] Rewrite portfolio project descriptions to include:
+  - [ ] Business problem statement
+  - [ ] AI techniques and approach used
+  - [ ] Quantifiable outcomes (time saved, accuracy improvement, cost reduction)
+  - [ ] Client testimonials or quotes (with permission)
 
 ## Phase 2: Content & Lead Generation (Priority: High, Timeline: 4-6 weeks)
 
@@ -166,8 +157,8 @@
 
 ## Implementation Priority
 
-**✅ COMPLETED**: Phase 1.1, 1.2, 1.2b & 1.3 (Website CTAs, services grid redesign, service pages, and portfolio enhancement)
-**CURRENT FOCUS**: Phase 2 (Content strategy and lead generation)
+**✅ COMPLETED**: Phase 1.1, 1.2 & 1.2b (Website CTAs, services grid redesign, and individual service pages)
+**CURRENT FOCUS**: Phase 1.3 (Portfolio enhancement with business impact)
 **Next 30 Days**: Phase 2 (Content strategy and lead magnets)
 **Months 2-3**: Phase 3 (Service specialization and remote framework)
 **Months 3-6**: Phase 4 (Training products and partnerships)
@@ -189,17 +180,5 @@
 - **Technical Fixes**: Resolved navbar occlusion, asset loading, and French page path issues
 - **Asset Management**: Added `relative_url` filters to all image templates for multilingual compatibility
 - **Service Structure**: Each page includes hero section, overview, detailed process, case studies, and clear CTAs
-
-### Phase 1.3: Portfolio Enhancement Implementation
-- **Service Category Filtering**: Interactive tabs system allowing visitors to filter portfolio by service type
-- **Business Impact Focus**: Complete portfolio rework showcasing quantifiable outcomes and ROI
-- **Portfolio Entries**: 8 comprehensive case studies with detailed business problem statements and solutions
-- **Enhanced Modal System**: Professional two-column modal layout inspired by service pages:
-  - Service type header banners with color-coded badges (warning/success/primary)
-  - Business impact sidebar with outcome metrics and quick facts
-  - Direct Google form integration replacing service page navigation
-  - Comprehensive responsive design for mobile devices
-- **Bilingual Support**: Complete French translations for all new portfolio content
-- **Technical Implementation**: Custom JavaScript filtering, SCSS styling, and Jekyll template enhancements
 
 This plan leverages your existing expertise while addressing the growing demand for specialized AI consulting and education in the sustainability sector.
