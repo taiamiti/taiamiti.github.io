@@ -147,16 +147,16 @@
                   {% endif %}
                 </p>
                 {% if project.service_type == "Data & AI Diagnostic Workshop" or project.service_type == "Atelier Diagnostic Données & IA" %}
-                  <a href="{% if include.lang == 'fr' %}/fr/services/diagnostic-donnees-ia/{% else %}/services/data-ai-diagnostic/{% endif %}" class="btn btn-outline-warning btn-sm w-100" data-dismiss="modal">
-                    {% if include.lang == "fr" %}En Savoir Plus{% else %}Learn More{% endif %}
+                  <a href="{% if include.lang == 'fr' %}https://forms.gle/s9sQJUrQRasrGXtg9{% else %}https://forms.gle/DhZVHqiKvFXUrsDY6{% endif %}" class="btn btn-outline-warning btn-sm w-100" target="_blank" rel="noopener noreferrer">
+                    {% if include.lang == "fr" %}Réserver un Atelier{% else %}Book Workshop{% endif %}
                   </a>
                 {% elsif project.service_type == "Generative AI Workshop" or project.service_type == "Formation IA Générative" %}
-                  <a href="{% if include.lang == 'fr' %}/fr/services/formation-ia-generative/{% else %}/services/generative-ai-workshop/{% endif %}" class="btn btn-outline-success btn-sm w-100" data-dismiss="modal">
-                    {% if include.lang == "fr" %}En Savoir Plus{% else %}Learn More{% endif %}
+                  <a href="{% if include.lang == 'fr' %}https://forms.gle/s9sQJUrQRasrGXtg9{% else %}https://forms.gle/DhZVHqiKvFXUrsDY6{% endif %}" class="btn btn-outline-success btn-sm w-100" target="_blank" rel="noopener noreferrer">
+                    {% if include.lang == "fr" %}Réserver une Formation{% else %}Book Workshop{% endif %}
                   </a>
                 {% else %}
-                  <a href="{% if include.lang == 'fr' %}/fr/services/solutions-ia-sur-mesure/{% else %}/services/custom-ai-solutions/{% endif %}" class="btn btn-outline-primary btn-sm w-100" data-dismiss="modal">
-                    {% if include.lang == "fr" %}En Savoir Plus{% else %}Learn More{% endif %}
+                  <a href="{% if include.lang == 'fr' %}https://forms.gle/s9sQJUrQRasrGXtg9{% else %}https://forms.gle/DhZVHqiKvFXUrsDY6{% endif %}" class="btn btn-outline-primary btn-sm w-100" target="_blank" rel="noopener noreferrer">
+                    {% if include.lang == "fr" %}Démarrer un Projet{% else %}Start Project{% endif %}
                   </a>
                 {% endif %}
               </div>
@@ -287,11 +287,11 @@
                 <h3 class="info-card-title">Interested in This Service?</h3>
                 <p class="small text-muted">Learn how this service can benefit your organization.</p>
                 {% if project.service_type == "Data & AI Diagnostic Workshop" %}
-                  <a href="/services/data-ai-diagnostic/" class="btn btn-outline-warning btn-sm w-100" data-dismiss="modal">Learn More</a>
+                  <a href="https://forms.gle/DhZVHqiKvFXUrsDY6" class="btn btn-outline-warning btn-sm w-100" target="_blank" rel="noopener noreferrer">Book Workshop</a>
                 {% elsif project.service_type == "Generative AI Workshop" %}
-                  <a href="/services/generative-ai-workshop/" class="btn btn-outline-success btn-sm w-100" data-dismiss="modal">Learn More</a>
+                  <a href="https://forms.gle/DhZVHqiKvFXUrsDY6" class="btn btn-outline-success btn-sm w-100" target="_blank" rel="noopener noreferrer">Book Workshop</a>
                 {% else %}
-                  <a href="/services/custom-ai-solutions/" class="btn btn-outline-primary btn-sm w-100" data-dismiss="modal">Learn More</a>
+                  <a href="https://forms.gle/DhZVHqiKvFXUrsDY6" class="btn btn-outline-primary btn-sm w-100" target="_blank" rel="noopener noreferrer">Start Project</a>
                 {% endif %}
               </div>
             </div>
