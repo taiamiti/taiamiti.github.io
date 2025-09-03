@@ -1,4 +1,4 @@
-<!-- Portfolio Grid with Service Category Filtering -->
+<!-- Portfolio Grid -->
 {% if include.lang and include.lang != "" and include.lang != nil %}
 <section class="bg-light page-section" id="{{ site.data.sitetext[include.lang].portfolio.section | default: " portfolio"
   }}">
@@ -11,63 +11,17 @@
         </h3>
       </div>
     </div>
-    
-    <!-- Service Category Filter Tabs -->
     <div class="row">
-      <div class="col-12 text-center mb-4">
-        <div class="portfolio-filter">
-          <button class="btn btn-outline-warning active" data-filter="*">
-            {% if include.lang == "fr" %}Tous{% else %}All{% endif %}
-          </button>
-          <button class="btn btn-outline-warning" data-filter=".diagnostic">
-            {% if include.lang == "fr" %}Diagnostic Données & IA{% else %}Data & AI Diagnostic{% endif %}
-          </button>
-          <button class="btn btn-outline-warning" data-filter=".workshop">
-            {% if include.lang == "fr" %}Formation IA Générative{% else %}Generative AI Workshop{% endif %}
-          </button>
-          <button class="btn btn-outline-warning" data-filter=".custom-solution">
-            {% if include.lang == "fr" %}Solutions IA Sur Mesure{% else %}Custom AI Solutions{% endif %}
-          </button>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row portfolio-container">
       {% assign projects = site.portfolio | where:'lang', include.lang | reverse %}
       {% for project in projects %}
-      {% assign filter_class = "" %}
-      {% if project.service_type == "Data & AI Diagnostic Workshop" or project.service_type == "Atelier Diagnostic Données & IA" %}
-        {% assign filter_class = "diagnostic" %}
-        {% assign service_badge = "Diagnostic" %}
-        {% assign badge_color = "badge-warning" %}
-      {% elsif project.service_type == "Generative AI Workshop" or project.service_type == "Formation IA Générative" %}
-        {% assign filter_class = "workshop" %}
-        {% assign service_badge = "Workshop" %}
-        {% assign badge_color = "badge-success" %}
-      {% elsif project.service_type == "Custom AI Solutions" or project.service_type == "Solutions IA Sur Mesure" %}
-        {% assign filter_class = "custom-solution" %}
-        {% assign service_badge = "Custom Solution" %}
-        {% assign badge_color = "badge-primary" %}
-      {% else %}
-        {% assign filter_class = "custom-solution" %}
-        {% assign service_badge = "Custom Solution" %}
-        {% assign badge_color = "badge-primary" %}
-      {% endif %}
-      
-      <div class="col-md-4 col-sm-6 portfolio-item {{ filter_class }}">
+      <div class="col-md-4 col-sm-6 portfolio-item">
         <a class="portfolio-link" data-toggle="modal" href="#p{{ forloop.index }}">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
               <i class="{{ site.data.style.portfolio-icon | default: " fas fa-plus fa-3x" }}"></i>
-              {% if project.business_impact %}
-              <div class="portfolio-impact-preview">{{ project.business_impact }}</div>
-              {% endif %}
             </div>
           </div>
           <img class="img-fluid" src="{{ project.caption.thumbnail | relative_url }}" alt="">
-          <div class="portfolio-service-badge">
-            <span class="badge {{ badge_color }}">{{ service_badge }}</span>
-          </div>
         </a>
         <div class="portfolio-caption">
           <h4>{{ project.caption.title }}</h4>
@@ -88,54 +42,16 @@
         <h3 class="section-subheading text-muted">{{ site.data.sitetext.portfolio.text | markdownify }}</h3>
       </div>
     </div>
-    
-    <!-- Service Category Filter Tabs -->
     <div class="row">
-      <div class="col-12 text-center mb-4">
-        <div class="portfolio-filter">
-          <button class="btn btn-outline-warning active" data-filter="*">All</button>
-          <button class="btn btn-outline-warning" data-filter=".diagnostic">Data & AI Diagnostic</button>
-          <button class="btn btn-outline-warning" data-filter=".workshop">Generative AI Workshop</button>
-          <button class="btn btn-outline-warning" data-filter=".custom-solution">Custom AI Solutions</button>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row portfolio-container">
       {% for project in site.portfolio %}
-      {% assign filter_class = "" %}
-      {% if project.service_type == "Data & AI Diagnostic Workshop" %}
-        {% assign filter_class = "diagnostic" %}
-        {% assign service_badge = "Diagnostic" %}
-        {% assign badge_color = "badge-warning" %}
-      {% elsif project.service_type == "Generative AI Workshop" %}
-        {% assign filter_class = "workshop" %}
-        {% assign service_badge = "Workshop" %}
-        {% assign badge_color = "badge-success" %}
-      {% elsif project.service_type == "Custom AI Solutions" %}
-        {% assign filter_class = "custom-solution" %}
-        {% assign service_badge = "Custom Solution" %}
-        {% assign badge_color = "badge-primary" %}
-      {% else %}
-        {% assign filter_class = "custom-solution" %}
-        {% assign service_badge = "Custom Solution" %}
-        {% assign badge_color = "badge-primary" %}
-      {% endif %}
-      
-      <div class="col-md-4 col-sm-6 portfolio-item {{ filter_class }}">
+      <div class="col-md-4 col-sm-6 portfolio-item">
         <a class="portfolio-link" data-toggle="modal" href="#p{{ forloop.index }}">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
               <i class="{{ site.data.style.portfolio-icon | default: " fas fa-plus fa-3x" }}"></i>
-              {% if project.business_impact %}
-              <div class="portfolio-impact-preview">{{ project.business_impact }}</div>
-              {% endif %}
             </div>
           </div>
           <img class="img-fluid" src="{{ project.caption.thumbnail | relative_url }}" alt="">
-          <div class="portfolio-service-badge">
-            <span class="badge {{ badge_color }}">{{ service_badge }}</span>
-          </div>
         </a>
         <div class="portfolio-caption">
           <h4>{{ project.caption.title }}</h4>
