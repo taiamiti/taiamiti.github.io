@@ -1,0 +1,531 @@
+// Service Detail Pages Styling
+
+// Service Hero/Masthead Section
+.service-masthead {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(90deg, fade-out($primary, 0.1) 0%, fade-out($primary, 0.3) 100%), 
+              url('#{$header-image}');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+
+  .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    
+    .intro-lead-in {
+      font-size: 1.5rem;
+      font-style: italic;
+      line-height: 1.5;
+      margin-bottom: 25px;
+      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    
+    .intro-heading {
+      font-size: 3.125rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 50px;
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .intro-text {
+      padding-top: 300px;
+      padding-bottom: 200px;
+      
+      .intro-lead-in {
+        font-size: 2.5rem;
+        font-style: italic;
+        line-height: 1.5;
+        margin-bottom: 25px;
+      }
+      
+      .intro-heading {
+        font-size: 4.6875rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+// Section styling matching home page theme
+.page-section {
+  padding: 100px 0;
+  
+  .section-heading {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  .section-subheading {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  &#service-overview {
+    .section-subheading {
+      font-size: 1.125rem;
+      line-height: 1.75;
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto 75px;
+    }
+  }
+}
+
+// Service Package Cards
+.service-package-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+  transition: all 0.3s ease;
+  border: none;
+  overflow: hidden;
+  
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(50, 50, 93, .15), 0 15px 35px rgba(0, 0, 0, .1);
+  }
+  
+  .package-header {
+    background: linear-gradient(135deg, $primary 0%, darken($primary, 10%) 100%);
+    color: white;
+    padding: 40px 30px;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 20px;
+      background: white;
+      border-radius: 20px 20px 0 0;
+    }
+    
+    .package-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    
+    .package-price {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 15px;
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    
+    .package-description {
+      font-size: 1.125rem;
+      margin-bottom: 0;
+      opacity: 0.9;
+      font-style: italic;
+    }
+  }
+  
+  .package-body {
+    padding: 40px 30px;
+    
+    .package-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+      li {
+        padding: 12px 0;
+        font-size: 1rem;
+        border-bottom: 1px solid #f8f9fa;
+        
+        &:last-child {
+          border-bottom: none;
+        }
+        
+        i {
+          margin-right: 15px;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  
+  .package-footer {
+    padding: 30px;
+    background: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+  }
+}
+
+// Service Content Sections
+.service-content-section {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  
+  h3 {
+    color: $primary;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 40px 0 20px;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  h4 {
+    color: darken($primary, 15%);
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 30px 0 15px;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  ul, ol {
+    padding-left: 0;
+    
+    li {
+      margin-bottom: 12px;
+      line-height: 1.6;
+      padding-left: 30px;
+      position: relative;
+      list-style: none;
+      
+      &:before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: $primary;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  
+  // Expertise grid styling
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    
+    .expertise-item {
+      background: white;
+      border-radius: 10px;
+      padding: 40px 30px;
+      box-shadow: 0 10px 25px rgba(50, 50, 93, .1), 0 3px 10px rgba(0, 0, 0, .05);
+      text-align: center;
+      transition: all 0.3s ease;
+      border-top: 4px solid $primary;
+      
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(50, 50, 93, .15), 0 8px 25px rgba(0, 0, 0, .1);
+      }
+      
+      .expertise-icon {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        display: block;
+      }
+      
+      h4 {
+        color: $primary;
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+      
+      p {
+        color: $gray-600;
+        line-height: 1.6;
+        margin-bottom: 0;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// Timeline for process steps (matching home page timeline style)
+.service-timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  
+  &:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    width: 2px;
+    background-color: #e9ecef;
+    left: 40px;
+    margin-left: -1.5px;
+  }
+  
+  .timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+    min-height: 50px;
+    
+    &:after,
+    &:before {
+      content: " ";
+      display: table;
+    }
+    
+    &:after {
+      clear: both;
+    }
+    
+    .timeline-image {
+      left: 0;
+      margin-left: 0;
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      z-index: 100;
+      background-color: $primary;
+      color: white;
+      border-radius: 100%;
+      border: 7px solid #e9ecef;
+      text-align: center;
+      
+      h4 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+        line-height: 1;
+        font-weight: 700;
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: white;
+      }
+    }
+    
+    .timeline-panel {
+      width: 100%;
+      float: right;
+      padding: 0 20px 0 100px;
+      position: relative;
+      text-align: left;
+      
+      &:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+      }
+      
+      &:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+      }
+      
+      .timeline-heading {
+        h4 {
+          margin-top: 0;
+          color: $primary;
+          font-weight: 700;
+          font-size: 1.5rem;
+          font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+      }
+      
+      .timeline-body {
+        font-size: 1.125rem;
+        line-height: 1.6;
+        color: $gray-600;
+        
+        p {
+          margin-bottom: 15px;
+          
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        
+        ul {
+          margin-top: 15px;
+          
+          li {
+            margin-bottom: 8px;
+            
+            &:before {
+              content: '•';
+              color: $primary;
+              font-weight: bold;
+              font-size: 1.2rem;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Service Contact Section
+#service-contact {
+  text-align: center;
+  color: white;
+  background: linear-gradient(90deg, fade-out($primary, 0.1) 0%, fade-out($primary, 0.3) 100%),
+              url('#{$contact-image}');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  
+  .section-heading {
+    color: white;
+  }
+  
+  .section-subheading {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.25rem;
+    margin-bottom: 50px;
+  }
+}
+
+// Responsive adjustments
+@media (min-width: 768px) {
+  .service-timeline {
+    &:before {
+      left: 50%;
+    }
+    
+    .timeline-item {
+      margin-bottom: 100px;
+      min-height: 100px;
+      
+      .timeline-image {
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        margin-left: -50px;
+        
+        h4 {
+          font-size: 18px;
+          margin-top: 30px;
+        }
+      }
+      
+      .timeline-panel {
+        width: 41%;
+        float: left;
+        padding: 0 20px 0 30px;
+        text-align: right;
+      }
+      
+      &.timeline-inverted .timeline-panel {
+        float: right;
+        text-align: left;
+        padding: 0 30px 0 20px;
+        
+        &:before {
+          border-left-width: 15px;
+          border-right-width: 0;
+          left: auto;
+          right: -15px;
+        }
+        
+        &:after {
+          border-left-width: 14px;
+          border-right-width: 0;
+          left: auto;
+          right: -14px;
+        }
+      }
+    }
+  }
+  
+  .service-content-section .expertise-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .service-masthead {
+    .intro-text {
+      padding-top: 100px;
+      padding-bottom: 50px;
+      
+      .intro-lead-in {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+      }
+      
+      .intro-heading {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  
+  .service-package-card {
+    margin-bottom: 30px;
+    
+    .package-header {
+      padding: 30px 20px;
+      
+      .package-title {
+        font-size: 1.25rem;
+      }
+      
+      .package-price {
+        font-size: 2rem;
+      }
+    }
+    
+    .package-body {
+      padding: 30px 20px;
+    }
+  }
+  
+  .service-content-section {
+    font-size: 1rem;
+    
+    .expertise-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      
+      .expertise-item {
+        padding: 30px 20px;
+      }
+    }
+  }
+}
+
+// Print styles
+@media print {
+  .service-masthead,
+  #service-contact {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .btn {
+    display: none;
+  }
+  
+  .service-package-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #dee2e6;
+  }
+}

@@ -23,9 +23,14 @@
           </span>
           <h4 class="service-heading">{{ service.title | markdownify }}</h4>
           {% if service.desc %}<div class="text-muted mb-3">{{ service.desc | markdownify }}</div>{% endif %}
-          {% if service.cta %}
-          <a class="{{ service.cta.class }}" href="{{ service.cta.url }}" target="_blank" rel="noopener">{{ service.cta.title }}</a>
-          {% endif %}
+          <div class="service-buttons">
+            {% if service.learn_more %}
+            <a class="{{ service.learn_more.class }}" href="{{ service.learn_more.url }}">{{ service.learn_more.title }}</a>
+            {% endif %}
+            {% if service.cta %}
+            <a class="{{ service.cta.class }}" href="{{ service.cta.url }}" target="_blank" rel="noopener">{{ service.cta.title }}</a>
+            {% endif %}
+          </div>
         </div>
       </div>
       {% endfor %}
@@ -56,9 +61,14 @@
           </span>
           <h4 class="service-heading">{{ service.title | markdownify }}</h4>
           {% if service.desc %}<div class="text-muted mb-3">{{ service.desc | markdownify }}</div>{% endif %}
-          {% if service.cta %}
-          <a class="{{ service.cta.class }}" href="{{ service.cta.url }}" target="_blank" rel="noopener">{{ service.cta.title }}</a>
-          {% endif %}
+          <div class="service-buttons">
+            {% if service.learn_more %}
+            <a class="{{ service.learn_more.class }}" href="{{ service.learn_more.url }}">{{ service.learn_more.title }}</a>
+            {% endif %}
+            {% if service.cta %}
+            <a class="{{ service.cta.class }}" href="{{ service.cta.url }}" target="_blank" rel="noopener">{{ service.cta.title }}</a>
+            {% endif %}
+          </div>
         </div>
       </div>
       {% endfor %}

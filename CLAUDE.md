@@ -7,10 +7,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 This is a personal portfolio website built with Jekyll using a modified version of the agency-jekyll-theme. The site showcases AI/ML consulting services and portfolio projects, with bilingual support (English/French).
 
 ### Core Services Offered
-- **On-Demand Consulting**: Flexible AI strategy and technical guidance
-- **Data & AI Diagnostic Workshop**: Assessment of AI readiness and opportunities
-- **Generative AI Workshop**: Hands-on training for teams and executives
-- **Custom AI Solutions**: End-to-end AI system development and deployment
+- **On-Demand Consulting**: Flexible AI strategy and technical guidance ($350-500)
+- **Data & AI Diagnostic Workshop**: Assessment of AI readiness and opportunities ($5,000)
+- **Generative AI Workshop**: Hands-on training for teams and executives ($5,000)
+- **Custom AI Solutions**: End-to-end AI system development and deployment ($10K-150K+)
 
 ## Development Commands
 
@@ -60,6 +60,7 @@ bundle clean --force && bundle install
 - **Multilingual Content**: Each content piece has English and French versions
 - **YAML Configuration**: Site text and data centralized in `_data/sitetext.yml`
 - **Portfolio Projects**: Markdown files with YAML frontmatter for project details
+- **Service Pages**: Dedicated pages for each service with professional templates
 - **Blog Posts**: Language-specific posts in `_posts/` with `_fr.md` suffix pattern
 - **Remote Theme**: Uses `taiamiti/taiamiti.github.io` as remote theme
 
@@ -70,9 +71,18 @@ Each portfolio item follows this pattern:
 - **Required frontmatter**: `lang`, `caption` (title/subtitle/thumbnail), `title`, `subtitle`, `image`, `year`, `category`, `client`
 - **Assets**: Corresponding images in `assets/img/portfolio/`
 
+### Service Pages Structure
+Each service has dedicated pages in both languages:
+- **English**: `services/[service-name].html` with permalink `/services/[service-name]/`
+- **French**: `fr/services/[service-name].html` with permalink `/fr/services/[service-name]/`
+- **Template**: Professional hero section + overview + detailed sections + pricing
+- **Navigation**: Includes `{% include nav.html lang="[lang]" %}` for site navigation
+- **Assets**: Use absolute paths (`/assets/css/...`) for proper loading from nested URLs
+
 ### Layout System
 - Separate layouts for English (`default.html`, `home.html`) and French (`default_fr.html`, `home_fr.html`)
 - Language-specific includes and footer components
+- Service navigation via `nav.html` include (not `navheader.html` to avoid duplicate headers)
 - Responsive design with Bootstrap and custom SCSS
 
 ## Content Management
@@ -92,6 +102,15 @@ Each portfolio item follows this pattern:
 1. Create markdown file in `_posts/` with date prefix: `YYYY-MM-DD-title.md`
 2. Include French version with `_fr.md` suffix
 3. Use standard Jekyll post frontmatter with `lang` field
+
+### Managing Service Pages
+Service pages use a consistent template structure:
+1. **Navigation**: Always include `{% include nav.html lang="[lang]" %}` at the top
+2. **Hero Section**: Service-specific hero with clear value proposition and CTA buttons
+3. **Overview Section**: Main description with key details in info cards
+4. **Detailed Sections**: Service-specific content (process, features, case studies, etc.)
+5. **Pricing Section**: Clear pricing structure with packages and CTAs
+6. **Links**: Navigation links in `_data/sitetext.yml` must use permalink URLs (not .html files)
 
 ## Deployment
 
