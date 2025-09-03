@@ -17,7 +17,7 @@
                 <i class="{{ site.data.style.blog_icon | default: "fas fa-plus fa-3x" }}"></i>
               </div>
             </div>
-            <img class="img-fluid" src="{{ post.thumbnail }}" alt="">
+            <img class="img-fluid" src="{{ post.thumbnail | default: 'assets/img/portfolio/ocr_ctc.png' | relative_url }}" alt="{{ post.title }}">
           </a>
           <div class="blog-caption">
             <h4>{{ post.title }}</h4>
@@ -46,7 +46,7 @@
                 <i class="{{ site.data.style.blog_icon | default: "fas fa-plus fa-3x" }}"></i>
               </div>
             </div>
-            <img class="img-fluid" src="{{ post.thumbnail }}" alt="">
+            <img class="img-fluid" src="{{ post.thumbnail | default: 'assets/img/portfolio/ocr_ctc.png' | relative_url }}" alt="{{ post.title }}">
           </a>
           <div class="blog-caption">
             <h4>{{ post.title }}</h4>
