@@ -85,6 +85,16 @@ Each service has dedicated pages in both languages:
 - Service navigation via `nav.html` include (not `navheader.html` to avoid duplicate headers)
 - Responsive design with Bootstrap and custom SCSS
 
+### Asset Path Management
+**CRITICAL**: All image references in templates must use the `| relative_url` filter to ensure proper loading from French pages:
+- **Portfolio images**: `{{ project.caption.thumbnail | relative_url }}` in `portfolio_grid.html`
+- **Modal images**: `{{ project.image | relative_url }}` in `modals.html`  
+- **About photos**: `{{ site.data.sitetext[include.lang].about.photo | relative_url }}` in `about.html`
+- **Timeline images**: `{{ event.image | relative_url }}` in `timeline.html`
+- **Team images**: `{{ person.image | relative_url }}` in `team.html`
+
+Without `relative_url` filter, French pages (`/fr/`) incorrectly resolve `assets/img/...` paths as `/fr/assets/img/...` causing 404 errors.
+
 ## Content Management
 
 ### Adding Portfolio Projects

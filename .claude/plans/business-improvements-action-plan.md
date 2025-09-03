@@ -22,14 +22,17 @@
 - [x] Implement responsive grid layout (2x2 on tablet, 4x1 on desktop)
 - [x] Apply consistent primary button styling throughout
 
-### 1.2b Expand Service Pages (Next Priority)
-- [ ] Create dedicated service pages for each core offering:
-  - [ ] On-Demand Consulting page (hourly/project rates, expertise areas, response times)
-  - [ ] Data & AI Diagnostic Workshop page (half-day/full-day options, deliverables, methodology)
-  - [ ] Generative AI Workshop page (audience-specific tracks, hands-on exercises, outcomes)
-  - [ ] Custom AI Solutions page (end-to-end process, case studies, technology stack)
-- [ ] Add clear pricing packages or "starting from" ranges
-- [ ] Include industry-specific examples and use cases for each service
+### 1.2b Expand Service Pages ✅ COMPLETED
+- [x] Create dedicated service pages for each core offering:
+  - [x] On-Demand Consulting page (hourly/project rates $350-500, expertise areas, response times)
+  - [x] Data & AI Diagnostic Workshop page (3×2-hour format $5,000, deliverables, methodology)
+  - [x] Generative AI Workshop page (executive/team tracks $5,000, hands-on exercises, outcomes)
+  - [x] Custom AI Solutions page (end-to-end process $10K-150K+, case studies, technology stack)
+- [x] Add clear pricing packages and "starting from" ranges
+- [x] Include industry-specific examples and use cases for each service
+- [x] Implement bilingual service pages (English and French versions)
+- [x] Fix navbar occlusion issues and asset loading problems
+- [x] Resolve French page asset path issues with `relative_url` filters
 
 ### 1.3 Enhance Portfolio with Business Impact
 - [ ] Rewrite portfolio project descriptions to include:
@@ -154,18 +157,28 @@
 
 ## Implementation Priority
 
-**✅ COMPLETED**: Phase 1.1 & 1.2 (Website CTAs and services grid redesign)
-**CURRENT FOCUS**: Phase 1.2b (Individual service pages) & Phase 1.3 (Portfolio enhancement)
+**✅ COMPLETED**: Phase 1.1, 1.2 & 1.2b (Website CTAs, services grid redesign, and individual service pages)
+**CURRENT FOCUS**: Phase 1.3 (Portfolio enhancement with business impact)
 **Next 30 Days**: Phase 2 (Content strategy and lead magnets)
 **Months 2-3**: Phase 3 (Service specialization and remote framework)
 **Months 3-6**: Phase 4 (Training products and partnerships)
 **Ongoing**: Phase 5 (Marketing automation and thought leadership)
 
 ## Key Changes Made
+
+### Phase 1.1 & 1.2: Homepage Optimization
 - **Services Grid**: Redesigned from 5 generic services to 4 focused offerings with inline CTAs
 - **CTA Integration**: Each service now has its own action button for immediate lead capture
 - **Form URLs**: English forms use `https://forms.gle/DhZVHqiKvFXUrsDY6`, French forms use `https://forms.gle/s9sQJUrQRasrGXtg9`
 - **Layout**: Responsive 2x2/4x1 grid with consistent primary button styling
 - **Content**: Updated descriptions to clearly explain deliverables and target audiences
+
+### Phase 1.2b: Service Pages Implementation
+- **Professional Service Pages**: Created 8 dedicated pages (4 English + 4 French) with consistent template design
+- **Pricing Transparency**: Added clear pricing for all services ($350-500, $5K, $10K-150K+ ranges)
+- **Navigation Integration**: Implemented proper site navigation with language switching
+- **Technical Fixes**: Resolved navbar occlusion, asset loading, and French page path issues
+- **Asset Management**: Added `relative_url` filters to all image templates for multilingual compatibility
+- **Service Structure**: Each page includes hero section, overview, detailed process, case studies, and clear CTAs
 
 This plan leverages your existing expertise while addressing the growing demand for specialized AI consulting and education in the sustainability sector.
