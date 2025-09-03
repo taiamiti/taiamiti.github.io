@@ -53,4 +53,19 @@
     }
   </style>
   {% endif %}
+  
+  <!-- Service pages need top padding to avoid navbar occlusion -->
+  {% if page.permalink contains '/services/' %}
+  <style>
+    .page-section:first-of-type {
+      padding-top: 8rem !important;
+    }
+
+    @media only screen and (max-width: 991px) {
+      .page-section:first-of-type {
+        padding-top: 6rem !important;
+      }
+    }
+  </style>
+  {% endif %}
 </head>
