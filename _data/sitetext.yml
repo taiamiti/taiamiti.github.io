@@ -37,6 +37,10 @@ en: &DEFAULT_EN
       - title: "On-Demand Consulting"
         desc: "Flexible AI strategy and technical guidance when you need it. Get expert advice on AI implementation, technology selection, and problem-solving through phone, video, or email consultations."
         icon: fas fa-lightbulb
+        learn_more:
+          title: "Learn More"
+          url: "/services/on-demand-consulting/"
+          class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
         cta:
           title: "Get Consulting"
           url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
@@ -44,6 +48,10 @@ en: &DEFAULT_EN
       - title: "Data & AI Diagnostic Workshop"
         desc: "Comprehensive assessment of your organization's AI readiness. Identify opportunities, evaluate data quality, and create a roadmap for AI adoption with actionable recommendations."
         icon: fas fa-chart-line
+        learn_more:
+          title: "Learn More"
+          url: "/services/data-ai-diagnostic/"
+          class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
         cta:
           title: "Book Diagnostic"
           url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
@@ -51,6 +59,10 @@ en: &DEFAULT_EN
       - title: "Generative AI Workshop"
         desc: "Hands-on training for teams and executives on leveraging generative AI tools. Learn practical applications for content creation, automation, and decision support with ethical considerations."
         icon: fas fa-robot
+        learn_more:
+          title: "Learn More"
+          url: "/services/generative-ai-course/"
+          class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
         cta:
           title: "Book Workshop"
           url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
@@ -58,6 +70,10 @@ en: &DEFAULT_EN
       - title: "Custom AI Solutions"
         desc: "End-to-end development of tailored AI systems for your specific needs. From data preparation through deployment, we build production-ready solutions that deliver measurable business value."
         icon: fas fa-cogs
+        learn_more:
+          title: "Learn More"
+          url: "/services/custom-ai-solutions/"
+          class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
         cta:
           title: "Start Project"
           url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
@@ -227,6 +243,10 @@ fr: &DEFAULT_FR
       - title: "Consulting à la Demande"
         desc: "Conseils stratégiques et techniques en IA selon vos besoins. Obtenez l'expertise d'un spécialiste pour l'implémentation, le choix technologique et la résolution de problèmes par téléphone, visio ou email."
         icon: fas fa-lightbulb
+        learn_more:
+          title: "En Savoir Plus"
+          url: "/fr/services/consulting-ai-sur-demande/"
+          class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
         cta:
           title: "Demander Conseil"
           url: "https://forms.gle/s9sQJUrQRasrGXtg9"
@@ -234,6 +254,10 @@ fr: &DEFAULT_FR
       - title: "Diagnostic IA & Données"
         desc: "Évaluation complète de la maturité IA de votre organisation. Identifiez les opportunités, évaluez la qualité des données et créez une roadmap d'adoption avec des recommandations concrètes."
         icon: fas fa-chart-line
+        learn_more:
+          title: "En Savoir Plus"
+          url: "/fr/services/diagnostic-donnees-ia/"
+          class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
         cta:
           title: "Réserver Diagnostic"
           url: "https://forms.gle/s9sQJUrQRasrGXtg9"
@@ -241,6 +265,10 @@ fr: &DEFAULT_FR
       - title: "Atelier IA Générative"
         desc: "Formation pratique pour équipes et dirigeants sur l'utilisation des outils d'IA générative. Apprenez les applications concrètes pour la création de contenu, l'automatisation et l'aide à la décision."
         icon: fas fa-robot
+        learn_more:
+          title: "En Savoir Plus"
+          url: "/fr/services/formation-ia-generative/"
+          class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
         cta:
           title: "Réserver Atelier"
           url: "https://forms.gle/s9sQJUrQRasrGXtg9"
@@ -248,6 +276,10 @@ fr: &DEFAULT_FR
       - title: "Solutions IA Sur-Mesure"
         desc: "Développement complet de systèmes IA adaptés à vos besoins spécifiques. De la préparation des données au déploiement, nous créons des solutions prêtes pour la production."
         icon: fas fa-cogs
+        learn_more:
+          title: "En Savoir Plus"
+          url: "/fr/services/solutions-ia-sur-mesure/"
+          class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
         cta:
           title: "Démarrer Projet"
           url: "https://forms.gle/s9sQJUrQRasrGXtg9"
