@@ -11,7 +11,7 @@
     </div>
     <div class="row align-items-center">
       <div class="col-sm-4 mx-auto text-center">
-        <img class="rounded-circle img-fluid" src={{ site.data.sitetext[include.lang].about.photo }}>
+        <img class="rounded-circle img-fluid" src="{{ site.data.sitetext[include.lang].about.photo | relative_url }}">
       </div>
       <div class="col-sm-8 mx-auto text-center">
         <div class="large text-muted">{{ site.data.sitetext[include.lang].about.body | markdownify }}</div>
@@ -30,7 +30,7 @@
     </div>
     <div class="row">
       <div class="col-lg-3 mx-auto text-center">
-        <img class="rounded-circle img-fluid" src={{ site.data.sitetext[include.lang].about.photo }}>
+        <img class="rounded-circle img-fluid" src="{{ site.data.sitetext[include.lang].about.photo | relative_url }}">
       </div>
       <div class="col-lg-8 mx-auto text-center">
         <div class="large text-muted">{{ site.data.sitetext.about.body | markdownify }}</div>
