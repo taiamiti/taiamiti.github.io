@@ -3,7 +3,7 @@
 {% for post in posts %}
   {% if include.lang and include.lang != "" and include.lang != nil %}
     <div class="blog-modal modal fade" id="b{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -12,21 +12,44 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
+              <div class="col-lg-10 mx-auto">
+                <div class="modal-body p-4">
                   <!-- Blog Post Details -->
-                  <h2 class="text-uppercase">{{ post.title }}</h2>
-                  <p class="item-intro text-muted">
-                    {{ post.date | date: "%B %d, %Y" }}{% if post.categories %} | {{ post.categories | join: ", " }}{% endif %}
-                  </p>
-                  {% if post.thumbnail %}
-                    <img class="img-fluid d-block mx-auto" src="{{ post.thumbnail }}" alt="{{ post.title }}" />
-                  {% endif %}
-                  <p>{{ post.content }}</p>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fas fa-times"></i>
-                    {{ site.data.sitetext[include.lang].blog.closebutton | default: "Close Post" }}
-                  </button>
+                  <div class="row">
+                    <div class="col-md-8">
+                      <h2 class="text-uppercase mb-3">{{ post.title }}</h2>
+                      <p class="item-intro text-muted mb-4">
+                        <i class="fas fa-calendar-alt mr-2"></i>{{ post.date | date: "%B %d, %Y" }}{% if post.categories %} | <i class="fas fa-tags ml-3 mr-2"></i>{{ post.categories | join: ", " }}{% endif %}
+                      </p>
+                      {% if post.thumbnail %}
+                        <img class="img-fluid rounded mb-4" src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" />
+                      {% endif %}
+                      <div class="blog-content">{{ post.content }}</div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="blog-sidebar">
+                        <div class="card bg-light">
+                          <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-info-circle mr-2"></i>Article Info</h5>
+                            <p class="card-text">
+                              <small class="text-muted">
+                                <strong>Publié:</strong> {{ post.date | date: "%d %B %Y" }}<br>
+                                {% if post.categories %}<strong>Catégories:</strong> {{ post.categories | join: ", " }}{% endif %}
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-12 text-center">
+                      <button class="btn btn-primary btn-lg" data-dismiss="modal" type="button">
+                        <i class="fas fa-times mr-2"></i>
+                        {{ site.data.sitetext[include.lang].blog.closebutton | default: "Close Post" }}
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -36,7 +59,7 @@
     </div>
   {% else %}
     <div class="blog-modal modal fade" id="b{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -45,21 +68,44 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
+              <div class="col-lg-10 mx-auto">
+                <div class="modal-body p-4">
                   <!-- Blog Post Details -->
-                  <h2 class="text-uppercase">{{ post.title }}</h2>
-                  <p class="item-intro text-muted">
-                    {{ post.date | date: "%B %d, %Y" }}{% if post.categories %} | {{ post.categories | join: ", " }}{% endif %}
-                  </p>
-                  {% if post.thumbnail %}
-                    <img class="img-fluid d-block mx-auto" src="{{ post.thumbnail }}" alt="{{ post.title }}" />
-                  {% endif %}
-                  <p>{{ post.content }}</p>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fas fa-times"></i>
-                    {{ site.data.sitetext.blog.closebutton | default: "Close Post" }}
-                  </button>
+                  <div class="row">
+                    <div class="col-md-8">
+                      <h2 class="text-uppercase mb-3">{{ post.title }}</h2>
+                      <p class="item-intro text-muted mb-4">
+                        <i class="fas fa-calendar-alt mr-2"></i>{{ post.date | date: "%B %d, %Y" }}{% if post.categories %} | <i class="fas fa-tags ml-3 mr-2"></i>{{ post.categories | join: ", " }}{% endif %}
+                      </p>
+                      {% if post.thumbnail %}
+                        <img class="img-fluid rounded mb-4" src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" />
+                      {% endif %}
+                      <div class="blog-content">{{ post.content }}</div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="blog-sidebar">
+                        <div class="card bg-light">
+                          <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-info-circle mr-2"></i>Article Info</h5>
+                            <p class="card-text">
+                              <small class="text-muted">
+                                <strong>Published:</strong> {{ post.date | date: "%B %d, %Y" }}<br>
+                                {% if post.categories %}<strong>Categories:</strong> {{ post.categories | join: ", " }}{% endif %}
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-12 text-center">
+                      <button class="btn btn-primary btn-lg" data-dismiss="modal" type="button">
+                        <i class="fas fa-times mr-2"></i>
+                        {{ site.data.sitetext.blog.closebutton | default: "Close Post" }}
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
