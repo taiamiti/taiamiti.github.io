@@ -26,10 +26,10 @@
   {% else %}
     {% assign service_badge_text = "Custom AI Solutions" %}
   {% endif %}
-  {% assign service_badge_class = "badge-primary" %}
+  {% assign service_badge_class = "badge-secondary" %}
 {% else %}
   {% assign service_badge_text = "Custom Solution" %}
-  {% assign service_badge_class = "badge-primary" %}
+  {% assign service_badge_class = "badge-secondary" %}
 {% endif %}
 
 <div class="portfolio-modal modal fade" id="p{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
@@ -151,7 +151,7 @@
                     {% if include.lang == "fr" %}Réserver une Formation{% else %}Book Workshop{% endif %}
                   </a>
                 {% else %}
-                  <a href="{% if include.lang == 'fr' %}https://forms.gle/s9sQJUrQRasrGXtg9{% else %}https://forms.gle/DhZVHqiKvFXUrsDY6{% endif %}" class="btn btn-outline-primary btn-sm w-100" target="_blank" rel="noopener noreferrer">
+                  <a href="{% if include.lang == 'fr' %}https://forms.gle/s9sQJUrQRasrGXtg9{% else %}https://forms.gle/DhZVHqiKvFXUrsDY6{% endif %}" class="btn btn-outline-secondary btn-sm w-100" target="_blank" rel="noopener noreferrer">
                     {% if include.lang == "fr" %}Démarrer un Projet{% else %}Start Project{% endif %}
                   </a>
                 {% endif %}
@@ -176,10 +176,10 @@
   {% assign service_badge_class = "badge-success" %}
 {% elsif project.service_type == "Custom AI Solutions" %}
   {% assign service_badge_text = "Custom AI Solutions" %}
-  {% assign service_badge_class = "badge-primary" %}
+  {% assign service_badge_class = "badge-secondary" %}
 {% else %}
   {% assign service_badge_text = "Custom Solution" %}
-  {% assign service_badge_class = "badge-primary" %}
+  {% assign service_badge_class = "badge-secondary" %}
 {% endif %}
 
 <div class="portfolio-modal modal fade" id="p{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
@@ -284,7 +284,7 @@
                 {% elsif project.service_type == "Generative AI Workshop" %}
                   <a href="https://forms.gle/DhZVHqiKvFXUrsDY6" class="btn btn-outline-success btn-sm w-100" target="_blank" rel="noopener noreferrer">Book Workshop</a>
                 {% else %}
-                  <a href="https://forms.gle/DhZVHqiKvFXUrsDY6" class="btn btn-outline-primary btn-sm w-100" target="_blank" rel="noopener noreferrer">Start Project</a>
+                  <a href="https://forms.gle/DhZVHqiKvFXUrsDY6" class="btn btn-outline-secondary btn-sm w-100" target="_blank" rel="noopener noreferrer">Start Project</a>
                 {% endif %}
               </div>
             </div>

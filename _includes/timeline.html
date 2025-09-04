@@ -1,6 +1,6 @@
 <!-- About -->
 {% if include.lang and include.lang != "" and include.lang != nil %}
-<section class="bg-light page-section" id="{{ site.data.sitetext[include.lang].timeline.section | default: " about" }}">
+<section class="page-section" id="{{ site.data.sitetext[include.lang].timeline.section | default: " about" }}">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -61,7 +61,7 @@
   </div>
 </section>
 {% else %}
-<section class="bg-light page-section" id="{{ site.data.sitetext.timeline.section | default: " about" }}">
+<section class="page-section" id="{{ site.data.sitetext.timeline.section | default: " about" }}">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">

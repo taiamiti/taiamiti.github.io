@@ -1,5 +1,5 @@
 {% if include.lang and include.lang != "" and include.lang != nil %}
-  <section class="bg-light page-section" id="{{ site.data.sitetext[include.lang].blog.section | default: "blog" }}">
+  <section class="page-section" id="{{ site.data.sitetext[include.lang].blog.section | default: "blog" }}">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -29,7 +29,7 @@
     </div>
   </section>
   {% else %}
-  <section class="bg-light page-section" id="{{ site.data.sitetext.blog.section | default: "blog" }}">
+  <section class="page-section" id="{{ site.data.sitetext.blog.section | default: "blog" }}">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">

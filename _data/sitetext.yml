@@ -40,7 +40,7 @@ en: &DEFAULT_EN
         learn_more:
           title: "Learn More"
           url: "/services/on-demand-consulting/"
-          class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
+          class: "btn btn-outline-secondary btn-sm text-uppercase mr-2"
         cta:
           title: "Get Consulting"
           url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
@@ -51,7 +51,7 @@ en: &DEFAULT_EN
         learn_more:
           title: "Learn More"
           url: "/services/data-ai-diagnostic/"
-          class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
+          class: "btn btn-outline-secondary btn-sm text-uppercase mr-2"
         cta:
           title: "Book Diagnostic"
           url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
@@ -62,7 +62,7 @@ en: &DEFAULT_EN
         learn_more:
           title: "Learn More"
           url: "/services/generative-ai-course/"
-          class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
+          class: "btn btn-outline-secondary btn-sm text-uppercase mr-2"
         cta:
           title: "Book Workshop"
           url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
@@ -73,7 +73,7 @@ en: &DEFAULT_EN
         learn_more:
           title: "Learn More"
           url: "/services/custom-ai-solutions/"
-          class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
+          class: "btn btn-outline-secondary btn-sm text-uppercase mr-2"
         cta:
           title: "Start Building"
           url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
@@ -246,7 +246,7 @@ fr: &DEFAULT_FR
         learn_more:
           title: "En Savoir Plus"
           url: "/fr/services/consulting-ai-sur-demande/"
-          class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
+          class: "btn btn-outline-secondary btn-sm text-uppercase mr-2"
         cta:
           title: "Demander Conseil"
           url: "https://forms.gle/s9sQJUrQRasrGXtg9"
@@ -257,7 +257,7 @@ fr: &DEFAULT_FR
         learn_more:
           title: "En Savoir Plus"
           url: "/fr/services/diagnostic-donnees-ia/"
-          class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
+          class: "btn btn-outline-secondary btn-sm text-uppercase mr-2"
         cta:
           title: "Réserver Diagnostic"
           url: "https://forms.gle/s9sQJUrQRasrGXtg9"
@@ -268,7 +268,7 @@ fr: &DEFAULT_FR
         learn_more:
           title: "En Savoir Plus"
           url: "/fr/services/formation-ia-generative/"
-          class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
+          class: "btn btn-outline-secondary btn-sm text-uppercase mr-2"
         cta:
           title: "Réserver Atelier"
           url: "https://forms.gle/s9sQJUrQRasrGXtg9"
@@ -279,7 +279,7 @@ fr: &DEFAULT_FR
         learn_more:
           title: "En Savoir Plus"
           url: "/fr/services/solutions-ia-sur-mesure/"
-          class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
+          class: "btn btn-outline-secondary btn-sm text-uppercase mr-2"
         cta:
           title: "Commencer Projet"
           url: "https://forms.gle/s9sQJUrQRasrGXtg9"

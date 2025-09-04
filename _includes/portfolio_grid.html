@@ -1,6 +1,6 @@
 <!-- Portfolio Grid with Service Category Filtering -->
 {% if include.lang and include.lang != "" and include.lang != nil %}
-<section class="bg-light page-section" id="{{ site.data.sitetext[include.lang].portfolio.section | default: " portfolio"
+<section class="bg-gray-soft page-section" id="{{ site.data.sitetext[include.lang].portfolio.section | default: " portfolio"
   }}">
   <div class="container">
     <div class="row">
@@ -47,11 +47,11 @@
       {% elsif project.service_type == "Custom AI Solutions" or project.service_type == "Solutions IA Sur Mesure" %}
         {% assign filter_class = "custom-solution" %}
         {% assign service_badge = "Custom Solution" %}
-        {% assign badge_color = "badge-primary" %}
+        {% assign badge_color = "badge-secondary" %}
       {% else %}
         {% assign filter_class = "custom-solution" %}
         {% assign service_badge = "Custom Solution" %}
-        {% assign badge_color = "badge-primary" %}
+        {% assign badge_color = "badge-secondary" %}
       {% endif %}
       
       <div class="col-md-4 col-sm-6 portfolio-item {{ filter_class }}">
@@ -79,7 +79,7 @@
   </div>
 </section>
 {% else %}
-<section class="bg-light page-section" id="{{ site.data.sitetext.portfolio.section | default: " portfolio" }}">
+<section class="bg-gray-soft page-section" id="{{ site.data.sitetext.portfolio.section | default: " portfolio" }}">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -115,11 +115,11 @@
       {% elsif project.service_type == "Custom AI Solutions" %}
         {% assign filter_class = "custom-solution" %}
         {% assign service_badge = "Custom Solution" %}
-        {% assign badge_color = "badge-primary" %}
+        {% assign badge_color = "badge-secondary" %}
       {% else %}
         {% assign filter_class = "custom-solution" %}
         {% assign service_badge = "Custom Solution" %}
-        {% assign badge_color = "badge-primary" %}
+        {% assign badge_color = "badge-secondary" %}
       {% endif %}
       
       <div class="col-md-4 col-sm-6 portfolio-item {{ filter_class }}">
