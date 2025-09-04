@@ -16,14 +16,14 @@
     <div class="row text-center">
       {% for service in site.data.sitetext[include.lang].services.list %}
       <div class="col-md-6 col-lg-3 mb-4">
-        <div class="service-item text-center h-100 p-4">
+        <div class="service-item text-center h-100 p-4 d-flex flex-column">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="{{ service.icon | default: 'fas fa-cogs' }} fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">{{ service.title | markdownify }}</h4>
-          {% if service.desc %}<div class="text-muted mb-3">{{ service.desc | markdownify }}</div>{% endif %}
-          <div class="mt-3">
+          {% if service.desc %}<div class="text-muted mb-3 flex-grow-1">{{ service.desc | markdownify }}</div>{% endif %}
+          <div class="mt-auto pt-3">
             {% if service.learn_more %}
             <a class="{{ service.learn_more.class }}" href="{{ service.learn_more.url }}">{{ service.learn_more.title }}</a>
             {% endif %}
@@ -54,14 +54,14 @@
     <div class="row text-center">
       {% for service in site.data.sitetext.services.list %}
       <div class="col-md-6 col-lg-3 mb-4">
-        <div class="service-item text-center h-100 p-4">
+        <div class="service-item text-center h-100 p-4 d-flex flex-column">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="{{ service.icon | default: 'fas fa-cogs' }} fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">{{ service.title | markdownify }}</h4>
-          {% if service.desc %}<div class="text-muted mb-3">{{ service.desc | markdownify }}</div>{% endif %}
-          <div class="mt-3">
+          {% if service.desc %}<div class="text-muted mb-3 flex-grow-1">{{ service.desc | markdownify }}</div>{% endif %}
+          <div class="mt-auto pt-3">
             {% if service.learn_more %}
             <a class="{{ service.learn_more.class }}" href="{{ service.learn_more.url }}">{{ service.learn_more.title }}</a>
             {% endif %}

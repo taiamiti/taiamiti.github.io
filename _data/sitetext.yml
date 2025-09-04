@@ -45,7 +45,7 @@ en: &DEFAULT_EN
           title: "Get Consulting"
           url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
           class: "btn btn-primary btn-lg text-uppercase mt-3"
-      - title: "Data & AI Diagnostic Workshop"
+      - title: "Data & AI Diagnostic"
         desc: "Comprehensive assessment of your organization's AI readiness. Identify opportunities, evaluate data quality, and create a roadmap for AI adoption with actionable recommendations."
         icon: fas fa-chart-line
         learn_more:
