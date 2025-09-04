@@ -75,7 +75,7 @@ en: &DEFAULT_EN
           url: "/services/custom-ai-solutions/"
           class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
         cta:
-          title: "Start Project"
+          title: "Start Building"
           url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
           class: "btn btn-primary btn-lg text-uppercase mt-3"
 
@@ -281,7 +281,7 @@ fr: &DEFAULT_FR
           url: "/fr/services/solutions-ia-sur-mesure/"
           class: "btn btn-outline-primary btn-sm text-uppercase mr-2"
         cta:
-          title: "Démarrer Projet"
+          title: "Commencer Projet"
           url: "https://forms.gle/s9sQJUrQRasrGXtg9"
           class: "btn btn-primary btn-lg text-uppercase mt-3"
 

@@ -17,7 +17,7 @@
       {% for service in site.data.sitetext[include.lang].services.list %}
       <div class="col-md-6 col-lg-3 mb-4">
         <div class="service-item text-center h-100 p-4 d-flex flex-column">
-          <span class="fa-stack fa-4x">
+          <span class="fa-stack fa-4x mx-auto">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="{{ service.icon | default: 'fas fa-cogs' }} fa-stack-1x fa-inverse"></i>
           </span>
@@ -55,7 +55,7 @@
       {% for service in site.data.sitetext.services.list %}
       <div class="col-md-6 col-lg-3 mb-4">
         <div class="service-item text-center h-100 p-4 d-flex flex-column">
-          <span class="fa-stack fa-4x">
+          <span class="fa-stack fa-4x mx-auto">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="{{ service.icon | default: 'fas fa-cogs' }} fa-stack-1x fa-inverse"></i>
           </span>
