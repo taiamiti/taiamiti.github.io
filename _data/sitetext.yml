@@ -78,6 +78,17 @@ en: &DEFAULT_EN
           title: "Start Building"
           url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
           class: "btn btn-primary btn-lg text-uppercase mt-3"
+      - title: "Booking Website Creation"
+        desc: "I create fast, elegant, and fully functional booking websites tailored to activity providers in French Polynesia. Thanks to AI-assisted coding, your custom site is live in just days — with online payments, smart scheduling, bilingual support (FR/EN), and full mobile optimization."
+        icon: fas fa-calendar-check
+        learn_more:
+          title: "Learn More"
+          url: "/services/booking-website-creation/"
+          class: "btn btn-outline-secondary btn-sm text-uppercase mr-2"
+        cta:
+          title: "Request Quote"
+          url: "https://forms.gle/DhZVHqiKvFXUrsDY6"
+          class: "btn btn-primary btn-lg text-uppercase mt-3"
 
   portfolio:
     title: "Portfolio"
@@ -282,6 +293,17 @@ fr: &DEFAULT_FR
           class: "btn btn-outline-secondary btn-sm text-uppercase mr-2"
         cta:
           title: "Commencer Projet"
+          url: "https://forms.gle/s9sQJUrQRasrGXtg9"
+          class: "btn btn-primary btn-lg text-uppercase mt-3"
+      - title: "Création Site de Réservation"
+        desc: "Je crée des sites de réservation rapides, élégants et entièrement fonctionnels adaptés aux prestataires d'activités en Polynésie française. Grâce au codage assisté par IA, votre site personnalisé est en ligne en quelques jours — avec paiements en ligne, planification intelligente, support bilingue (FR/EN) et optimisation mobile complète."
+        icon: fas fa-calendar-check
+        learn_more:
+          title: "En Savoir Plus"
+          url: "/fr/services/creation-site-reservation/"
+          class: "btn btn-outline-secondary btn-sm text-uppercase mr-2"
+        cta:
+          title: "Demander Devis"
           url: "https://forms.gle/s9sQJUrQRasrGXtg9"
           class: "btn btn-primary btn-lg text-uppercase mt-3"
 
